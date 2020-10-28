@@ -1,0 +1,11 @@
+(module bird_with_pants_small_flipped (layer F.Cu) (tedit 5D6EE17B)
+  (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_poly (pts (xy 1.143 -1.524) (xy -0.4445 -1.524) (xy -1.2192 0.5715) (xy 0.5334 0.5715)
+    (xy 0.7874 -1.143)) (layer F.SilkS) (width 0.1))
+  (fp_poly (pts (xy 0.4953 0.8255) (xy -1.3208 0.8255) (xy -1.6002 1.5875) (xy 0.381 1.5875)) (layer F.SilkS) (width 0.1))
+)
