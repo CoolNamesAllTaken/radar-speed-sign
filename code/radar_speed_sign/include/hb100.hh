@@ -9,7 +9,7 @@ class HB100 {
     public:
         // sad sad, these are exposed because I need to hit them in an ISR
         volatile uint32_t last_pulse_period{0};
-        volatile uint32_t last_pulse_ms{0};
+        volatile uint32_t last_pulse_us{0};
 
         HB100(){}
 

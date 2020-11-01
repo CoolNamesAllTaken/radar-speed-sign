@@ -21,7 +21,7 @@
 #define ENCODER_STEPS_PER_NOTCH 1
 
 
-volatile uint32_t last_pulse_ms = millis(); // [ms] time of last radar pulse
+volatile uint32_t last_pulse_us = micros(); // [ms] time of last radar pulse
 volatile uint32_t last_pulse_period = 0; // [ms] time between last two falling edges from radar
 
 LiquidCrystal_I2C lcd(LCD_ADDRESS, LCD_WIDTH_CHARS, LCD_HEIGHT_LINES);
@@ -38,8 +38,8 @@ void timer1_isr() {
  * Interrupt handler that triggers on falling pulses from HB100 radar
  **/
 void radar_isr() {
-  hb100.last_pulse_period = millis() - hb100.last_pulse_ms;
-  hb100.last_pulse_ms = millis();
+  hb100.last_pulse_period = micros() - hb100.last_pulse_us;
+  hb100.last_pulse_us = micros();
 }
 
 void setup() {
@@ -72,6 +72,8 @@ void loop() {
     // Serial.print("HB100 last pulse period: ");
     // Serial.println(hb100.last_pulse_period);
     // Serial.print("Calculated speed: ");
+    Serial.print(hb100.last_pulse_period);
+    Serial.print("    ");
     Serial.println(hb100.calc_speed());
     seven_seg.write(hb100.calc_speed());
     delay(10);
