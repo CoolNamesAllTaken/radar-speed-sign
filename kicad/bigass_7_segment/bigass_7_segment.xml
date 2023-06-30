@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\git-checkouts\radar-speed-sign\kicad\bigass_7_segment\bigass_7_segment.kicad_sch</source>
-    <date>6/29/2023 12:31:33 PM</date>
+    <date>6/29/2023 1:23:27 PM</date>
     <tool>Eeschema (7.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -27,13 +27,15 @@
     <comp ref="D1">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
-      <property name="Standard Cost" value=""/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -44,12 +46,15 @@
     <comp ref="D2">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -60,12 +65,15 @@
     <comp ref="D3">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -76,12 +84,15 @@
     <comp ref="D4">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -92,12 +103,15 @@
     <comp ref="D5">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -108,12 +122,15 @@
     <comp ref="D6">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -124,12 +141,15 @@
     <comp ref="D7">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -140,12 +160,15 @@
     <comp ref="D8">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -156,12 +179,15 @@
     <comp ref="D9">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -172,12 +198,15 @@
     <comp ref="D10">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -188,12 +217,15 @@
     <comp ref="D11">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -204,12 +236,15 @@
     <comp ref="D12">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -222,12 +257,14 @@
       <footprint>Diode_SMD:D_SOD-323</footprint>
       <datasheet>datasheets/2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--B5819WS_C22624.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C22624</field>
         <field name="MPN">B5819WS</field>
         <field name="Standard Cost">0.02</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <property name="MPN" value="B5819WS"/>
       <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C22624"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Schottky diode"/>
@@ -238,12 +275,15 @@
     <comp ref="D14">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -254,12 +294,15 @@
     <comp ref="D15">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -270,12 +313,15 @@
     <comp ref="D16">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -286,12 +332,15 @@
     <comp ref="D17">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -302,12 +351,15 @@
     <comp ref="D18">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -318,12 +370,15 @@
     <comp ref="D19">
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_RGB_5050-6</footprint>
-      <datasheet>datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C516304</field>
         <field name="MPN">HL-AF-5060S22OC-3-S1-THL</field>
+        <field name="Standard Cost">0.02</field>
       </fields>
-      <libsource lib="lib_sch" part="LED_RGB_Mirrored" description="RGB LED, 6 pin package"/>
+      <libsource lib="Custom_LED" part="LED_RGB_AAAKKK" description="RGB LED, 6 pin package"/>
       <property name="MPN" value="HL-AF-5060S22OC-3-S1-THL"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC_MPN" value="C516304"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="RGB LED, 6 pin package"/>
@@ -331,105 +386,19 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005f8ae599</tstamps>
     </comp>
-    <comp ref="J1">
-      <value>Conn_01x02</value>
-      <footprint>Custom_Pad:Pad_01x02_Edge_Pair</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005f798931</tstamps>
-    </comp>
-    <comp ref="J2">
-      <value>Conn_01x02</value>
-      <footprint>Custom_Pad:Pad_01x02_Edge_Pair</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005f79e63f</tstamps>
-    </comp>
-    <comp ref="J3">
-      <value>Conn_01x02</value>
-      <footprint>Custom_Pad:Pad_01x02_Edge_Pair</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005f79e956</tstamps>
-    </comp>
-    <comp ref="J4">
-      <value>Conn_01x02</value>
-      <footprint>Custom_Pad:Pad_01x02_Edge_Pair</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005f79ed35</tstamps>
-    </comp>
-    <comp ref="J5">
-      <value>Conn_01x01</value>
-      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005fa19dbe</tstamps>
-    </comp>
-    <comp ref="J6">
-      <value>Conn_01x01</value>
-      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005fa3cf41</tstamps>
-    </comp>
-    <comp ref="J7">
-      <value>Conn_01x01</value>
-      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005fa3d39c</tstamps>
-    </comp>
-    <comp ref="J8">
-      <value>Conn_01x01</value>
-      <footprint>TestPoint:TestPoint_Pad_2.0x2.0mm</footprint>
-      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005fa3d6f0</tstamps>
-    </comp>
     <comp ref="Q3">
       <value>25V 1.5A</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>datasheets/2303221100_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050_C2150.pdf</datasheet>
       <fields>
+        <field name="LCSC_MPN">C181160</field>
         <field name="MPN">SS8050</field>
         <field name="Standard Cost">0.01</field>
       </fields>
       <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
       <property name="MPN" value="SS8050"/>
       <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C181160"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="NPN transistor, base/emitter/collector"/>
@@ -439,13 +408,16 @@
     </comp>
     <comp ref="R1">
       <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <datasheet>datasheets/1811082123_YAGEO-AF0603JR-0710KL_C144116.pdf</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <fields>
-        <field name="MPN">AF0603JR-0710K</field>
+        <field name="LCSC_MPN">C84376</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
       </fields>
       <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
-      <property name="MPN" value="AF0603JR-0710K"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C84376"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Resistor, US symbol"/>
@@ -456,7 +428,15 @@
     <comp ref="R2">
       <value>1.3k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC_MPN">C137582</field>
+        <field name="MPN">RC0805FR-071K3L</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
       <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0805FR-071K3L"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C137582"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Resistor, US symbol"/>
@@ -467,7 +447,15 @@
     <comp ref="R3">
       <value>3.9R 0805 1/10W</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC_MPN">C137529</field>
+        <field name="MPN">RC0805FR-073R9L</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
       <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0805FR-073R9L"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C137529"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Resistor, US symbol"/>
@@ -478,7 +466,15 @@
     <comp ref="R4">
       <value>3.9R 0805 1/10W</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC_MPN">C137529</field>
+        <field name="MPN">RC0805FR-073R9L</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
       <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0805FR-073R9L"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C137529"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Resistor, US symbol"/>
@@ -489,7 +485,15 @@
     <comp ref="R5">
       <value>3.9R 0805 1/10W</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC_MPN">C137529</field>
+        <field name="MPN">RC0805FR-073R9L</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
       <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0805FR-073R9L"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC_MPN" value="C137529"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="bigass_7_segment.kicad_sch"/>
       <property name="ki_description" value="Resistor, US symbol"/>
@@ -529,6 +533,35 @@
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
+    </libpart>
+    <libpart lib="Custom_LED" part="LED_RGB_AAAKKK">
+      <description>RGB LED, 6 pin package</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_RGB_AAAKKK</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BA" type="passive"/>
+        <pin num="2" name="GA" type="passive"/>
+        <pin num="3" name="RA" type="passive"/>
+        <pin num="4" name="RK" type="passive"/>
+        <pin num="5" name="GK" type="passive"/>
+        <pin num="6" name="BK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Placeholder" part="Graphic">
+      <description>Placeholder for silkscreen graphic to be included on PCB.</description>
+      <fields>
+        <field name="Reference">GRAPHIC</field>
+        <field name="Value">Graphic</field>
+      </fields>
     </libpart>
     <libpart lib="Custom_Placeholder" part="PCB">
       <description>Placeholder for PN and REV in copper to be included on PCB.</description>
@@ -601,38 +634,13 @@
         <field name="Datasheet">~</field>
       </fields>
     </libpart>
-    <libpart lib="lib_sch" part="Graphic">
-      <fields>
-        <field name="Reference">GRAPHIC</field>
-        <field name="Value">Graphic</field>
-      </fields>
-    </libpart>
-    <libpart lib="lib_sch" part="LED_RGB_Mirrored">
-      <description>RGB LED, 6 pin package</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>LED*</fp>
-        <fp>LED_SMD:*</fp>
-        <fp>LED_THT:*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">LED_RGB_Mirrored</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="BA" type="passive"/>
-        <pin num="2" name="GA" type="passive"/>
-        <pin num="3" name="RA" type="passive"/>
-        <pin num="4" name="RK" type="passive"/>
-        <pin num="5" name="GK" type="passive"/>
-        <pin num="6" name="BK" type="passive"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector_Generic">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Custom_LED">
+      <uri>C:\git-checkouts\kicad-libs/lib_sch/Custom_LED.kicad_sym</uri>
     </library>
     <library logical="Custom_Placeholder">
       <uri>C:\git-checkouts\kicad-libs/lib_sch/Custom_Placeholder.kicad_sym</uri>
@@ -642,9 +650,6 @@
     </library>
     <library logical="Mechanical">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
-    </library>
-    <library logical="lib_sch">
-      <uri>C:\git-checkouts\radar-speed-sign\kicad\bigass_7_segment/lib_sch.lib</uri>
     </library>
   </libraries>
   <nets>
@@ -659,10 +664,6 @@
       <node ref="D7" pin="1" pinfunction="BA" pintype="passive"/>
       <node ref="D7" pin="2" pinfunction="GA" pintype="passive"/>
       <node ref="D7" pin="3" pinfunction="RA" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
     <net code="2" name="/BJT_B">
       <node ref="Q3" pin="1" pinfunction="B" pintype="input"/>
@@ -676,18 +677,10 @@
       <node ref="R5" pin="2" pintype="passive"/>
     </net>
     <net code="4" name="/LED_ON">
-      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
     <net code="5" name="GND">
-      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="Q3" pin="2" pinfunction="E" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>

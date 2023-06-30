@@ -1,59 +1,7 @@
-"Source:","C:\Users\John McNelly\Box Sync\Projects\radar-speed-sign\bigass_7_segment\bigass_7_segment.sch"
-"Date:","10/7/2020 2:17:10 AM"
-"Tool:","Eeschema (5.1.7)-1"
-"Generator:","C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py"
-"Component Count:","36"
-
-"Individual Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","MPN"
-"","","D1","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D2","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D3","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D4","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D5","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D6","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D7","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D8","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D9","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D10","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D11","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D12","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D13","D_Schottky","Device:D_Schottky","Diode_SMD:D_SOD-123","datasheets/2001131004_Shikues-MBR0520_C475717.pdf","MBR0520"
-"","","D14","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D15","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D16","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D17","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D18","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D19","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"","","D20","D_Schottky","Device:D_Schottky","Diode_SMD:D_SOD-123","datasheets/2001131004_Shikues-MBR0520_C475717.pdf","MBR0520"
-"","","D21","D_Schottky","Device:D_Schottky","Diode_SMD:D_SOD-123","datasheets/2001131004_Shikues-MBR0520_C475717.pdf","MBR0520"
-"","","GRAPHIC1","Graphic","lib_sch:Graphic","lib_fp:bird_with_pants_small_flipped","",""
-"","","H1","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3mm","~",""
-"","","H2","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3mm","~",""
-"","","J1","Conn_01x02","Connector_Generic:Conn_01x02","lib_fp:Pad_01x02_Edge_Pair","~",""
-"","","J2","Conn_01x02","Connector_Generic:Conn_01x02","lib_fp:Pad_01x02_Edge_Pair","~",""
-"","","J3","Conn_01x02","Connector_Generic:Conn_01x02","lib_fp:Pad_01x02_Edge_Pair","~",""
-"","","J4","Conn_01x02","Connector_Generic:Conn_01x02","lib_fp:Pad_01x02_Edge_Pair","~",""
-"","","J5","Conn_01x01","Connector_Generic:Conn_01x01","TestPoint:TestPoint_Pad_2.0x2.0mm","~",""
-"","","J6","Conn_01x01","Connector_Generic:Conn_01x01","TestPoint:TestPoint_Pad_2.0x2.0mm","~",""
-"","","J7","Conn_01x01","Connector_Generic:Conn_01x01","TestPoint:TestPoint_Pad_2.0x2.0mm","~",""
-"","","J8","Conn_01x01","Connector_Generic:Conn_01x01","TestPoint:TestPoint_Pad_2.0x2.0mm","~",""
-"","","Q1","NDS7002A","Transistor_FET:2N7002","Package_TO_SOT_SMD:SOT-23","datasheets/NDS7002A-D.PDF","NDS7002A"
-"","","Q2","NDS7002A","Transistor_FET:2N7002","Package_TO_SOT_SMD:SOT-23","datasheets/NDS7002A-D.PDF","NDS7002A"
-"","","Q3","NDS7002A","Transistor_FET:2N7002","Package_TO_SOT_SMD:SOT-23","datasheets/NDS7002A-D.PDF","NDS7002A"
-"","","R1","10k","Device:R_US","Resistor_SMD:R_0603_1608Metric","datasheets/1811082123_YAGEO-AF0603JR-0710KL_C144116.pdf","AF0603JR-0710K"
-
-
-
-"Collated Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","MPN"
-"1","18","D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D14, D15, D16, D17, D18, D19","LED_RGB","lib_sch:LED_RGB_Mirrored","LED_SMD:LED_RGB_5050-6","datasheets/2005041205_HONGLITRONIC-Hongli-Zhihui-HONGLITRONIC-HL-AF-5060S22OC-3-S1-THL_C516304.pdf","HL-AF-5060S22OC-3-S1-THL"
-"2","3","D13, D20, D21","D_Schottky","Device:D_Schottky","Diode_SMD:D_SOD-123","datasheets/2001131004_Shikues-MBR0520_C475717.pdf","MBR0520"
-"3","1","GRAPHIC1","Graphic","lib_sch:Graphic","lib_fp:bird_with_pants_small_flipped","",""
-"4","2","H1, H2","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3mm","~",""
-"5","4","J1, J2, J3, J4","Conn_01x02","Connector_Generic:Conn_01x02","lib_fp:Pad_01x02_Edge_Pair","~",""
-"6","4","J5, J6, J7, J8","Conn_01x01","Connector_Generic:Conn_01x01","TestPoint:TestPoint_Pad_2.0x2.0mm","~",""
-"7","3","Q1, Q2, Q3","NDS7002A","Transistor_FET:2N7002","Package_TO_SOT_SMD:SOT-23","datasheets/NDS7002A-D.PDF","NDS7002A"
-"8","1","R1","10k","Device:R_US","Resistor_SMD:R_0603_1608Metric","datasheets/1811082123_YAGEO-AF0603JR-0710KL_C144116.pdf","AF0603JR-0710K"
+Item,Qty,Reference(s),Value,LibPart,Footprint,LCSC_MPN,MPN,REV,Standard Cost
+1,18,"D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D14, D15, D16, D17, D18, D19",LED_RGB,Custom_LED:LED_RGB_AAAKKK,LED_SMD:LED_RGB_5050-6,C516304,HL-AF-5060S22OC-3-S1-THL,,0.02
+2,1,D13,40V 1A,Device:D_Schottky,Diode_SMD:D_SOD-323,C22624,B5819WS,,0.02
+3,1,Q3,25V 1.5A,Device:Q_NPN_BEC,Package_TO_SOT_SMD:SOT-23,C181160,SS8050,,0.01
+4,1,R1,10k,Device:R_US,Resistor_SMD:R_0805_2012Metric,C84376,RC0805FR-0710KL,,0.01
+5,1,R2,1.3k,Device:R_US,Resistor_SMD:R_0805_2012Metric,C137582,RC0805FR-071K3L,,0.01
+6,3,"R3, R4, R5",3.9R 0805 1/10W,Device:R_US,Resistor_SMD:R_0805_2012Metric,C137529,RC0805FR-073R9L,,0.01

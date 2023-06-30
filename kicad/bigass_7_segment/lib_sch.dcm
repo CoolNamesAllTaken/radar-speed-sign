@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP LED_RGB_Mirrored
-D RGB LED, 6 pin package
-K LED RGB diode
-F ~
-$ENDCMP
-#
-#End Doc Library
