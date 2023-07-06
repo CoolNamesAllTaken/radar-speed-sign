@@ -1,0 +1,17 @@
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,LCSC MPN,MPN,REV,Standard Cost
+1,2,"C1, C2",0.1uF,Device:C,Capacitor_SMD:C_0805_2012Metric,https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf,C1525,C49678,CC0805KRX7R9BB104,0.01
+2,1,C3,680uF 25V,Device:C_Polarized_US,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,https://datasheet.lcsc.com/lcsc/2304140030_Rubycon-35PX680MEFC10X16_C88725.pdf,C88725,35PX680MEFC10X16,,0.12
+3,1,C4,220uF 25V,Device:C_Polarized_US,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,https://datasheet.lcsc.com/lcsc/2304140030_Rubycon-25YXJ220M6-3X11_C88729.pdf,C88729,25YXJ220M6.3X11,,0.04
+4,2,"D1, D2",40V 3A,Device:D_Schottky,Diode_SMD:D_SMA,https://datasheet.lcsc.com/lcsc/2212271430_SMC-Sangdest-Microelectronicstronic--Nanjing-SK34A_C260394.pdf,C260394,SK34A,,0.07
+5,2,"J1, J2","0.1"" Pin Header 02x08",Connector_Generic:Conn_02x08_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Horizontal,~,C492436,PZ254R-12-16P,,0.05
+6,1,J3,5.08mm Terminal Block 01x02,Connector_Generic:Conn_01x02,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",~,C8465,WJ500V-5.08-2P,,0.06
+7,1,J4,"0.1"" Pin Header 01x03",Connector:Conn_01x03_Pin,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal,~,C492411,PZ254R-11-03P,,0.01
+8,1,J5,2.54mm Terminal Block 01x04,Connector_Generic:Conn_01x04,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal",~,C915913,XY308-2.54-4P,,0.21
+9,1,L1,47uH 3A,Device:L,Custom_Inductor:L_SunItechTech_SLO1040H470MTT,https://datasheet.lcsc.com/lcsc/2209271230_Sunltech-Tech-SLO1040H470MTT_C182153.pdf,C182153,SLO1040H470MTT,,0.13
+10,2,"PART1, PART2","0.1"" Pin Socket 01x20",Custom_Placeholder:Part,,,C2897383,PM254-1-20-Z-8.5,,0.16
+11,3,"R1, R2, R3",10k,Device:R_US,Resistor_SMD:R_0805_2012Metric,~,C84376,RC0805FR-0710KL,,0.01
+12,1,R4,30k 1%,Device:R_US,Resistor_SMD:R_0805_2012Metric,~,C126352,RC0805FR-0730KL,,0.01
+13,1,R5,10k 1%,Device:R_US,Resistor_SMD:R_0805_2012Metric,~,C84376,RC0805FR-0710KL,,0.01
+14,1,U1,Pico_H,Custom_MCU:Pico_H,Custom_Module:RPi_Pico_TH_Socket,https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf,,,,
+15,2,"U2, U3",74HC595,74xx:74HC595,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,http://www.ti.com/lit/ds/symlink/sn74hc595.pdf,C5947,"74HC595D,118",,0.1
+16,1,U5,LM2596S-ADJ,Regulator_Switching:LM2596S-ADJ,Package_TO_SOT_SMD:TO-263-5_TabPin3,http://www.ti.com/lit/ds/symlink/lm2596.pdf,C347423,LM2596S-ADJ,,0.33

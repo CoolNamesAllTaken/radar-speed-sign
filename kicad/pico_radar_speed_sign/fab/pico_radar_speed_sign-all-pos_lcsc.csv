@@ -1,0 +1,25 @@
+Desugnator,Val,Package,Mid X,Mid Y,Rotation,Layer
+PCB1,PCB,PCB_PN_REV,95.55,-89.85,-90,bottom
+C1,0.1uF,C_0805_2012Metric,54.459999,-85,180,top
+C2,0.1uF,C_0805_2012Metric,54.5,-101.5,180,top
+C3,680uF 25V,CP_Radial_D10.0mm_P5.00mm,62.695,-78.842444,-90,top
+C4,220uF 25V,CP_Radial_D6.3mm_P2.50mm,80.695,-69.454999,90,top
+C5,DNP,C_0805_2012Metric,70.5,-69,90,top
+D1,40V 3A,D_SMA,53,-78,180,top
+D2,40V 3A,D_SMA,73.695001,-67.454998,90,top
+GRAPHIC1,Graphic,BirdWithPants_Small_Right,94,-127.5,90,top
+J1,"0.1 Pin Header 02x08""",PinHeader_2x08_P2.54mm_Horizontal,37,-122,180,top
+J2,"0.1 Pin Header 02x08""",PinHeader_2x08_P2.54mm_Horizontal,37,-97.78,180,top
+J3,Conn_01x02,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",36,-66.92,-90,top
+J4,"0.1 Pin Header 01x03""",PinHeader_1x03_P2.54mm_Horizontal,34.5,-134.08,180,top
+J5,Conn_01x04,"TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal",94,-78.5,90,top
+L1,47uH 3A,L_SunItechTech_SLO1040H470MTT,76.695,-77.454999,0,top
+R1,10k,R_0805_2012Metric,59.4125,-112.5,0,top
+R2,10k,R_0805_2012Metric,59.5,-109.5,0,top
+R3,10k,R_0805_2012Metric,59.5,-107.5,180,top
+R4,30k 1%,R_0805_2012Metric,68.5,-69,90,top
+R5,10k 1%,R_0805_2012Metric,69.695,-65.455,90,top
+U1,Pico_H,RPi_Pico_TH_Socket,76.89,-112.11,180,top
+U2,74HC595,SOIC-16_3.9x9.9mm_P1.27mm,53.000001,-108.5,0,top
+U3,74HC595,SOIC-16_3.9x9.9mm_P1.27mm,52.935,-92,0,top
+U5,LM2596S-ADJ,TO-263-5_TabPin3,56.82,-69.455,180,top

@@ -11,7 +11,7 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.049999999999999996,
-        "dimension_precision": 4,
+        "dimension_precision": 2,
         "dimension_units": 3,
         "dimensions": {
           "arrow_length": 1270000,
@@ -55,7 +55,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|121699999|84230001|956457c5-b15c-4149-8d9f-f03e7dc0e55b|fabc3150-6791-4bad-8b73-86a7b79c37e0",
+        "courtyards_overlap|121699999|84230001|fabc3150-6791-4bad-8b73-86a7b79c37e0|956457c5-b15c-4149-8d9f-f03e7dc0e55b",
+        "lib_footprint_mismatch|116115000|88540000|fabc3150-6791-4bad-8b73-86a7b79c37e0|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|119631250|88500000|956457c5-b15c-4149-8d9f-f03e7dc0e55b|00000000-0000-0000-0000-000000000000",
+        "solder_mask_bridge|181701071|39664285|b6faf18e-fae2-48ff-99c0-3243fafb9bc2|39c0fd16-e3e6-4c1f-bb9c-d7edea85bf7e"
+      ],
       "meta": {
         "version": 2
       },
@@ -452,7 +458,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "fab/pico_radar_speed_sign.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -482,7 +488,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "plots/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,

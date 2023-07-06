@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\git-checkouts\radar-speed-sign\kicad\pico_radar_speed_sign\pico_radar_speed_sign.kicad_sch</source>
+    <date>7/5/2023 10:20:24 PM</date>
+    <tool>Eeschema (7.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Pi Pico Radar Speed Sign Controller</title>
+        <company>Pants for Birds</company>
+        <rev>A</rev>
+        <date>2023-07-05</date>
+        <source>pico_radar_speed_sign.kicad_sch</source>
+        <comment number="1" value="John McNelly - jkailimcnelly@gmail.com"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C1525</field>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC MPN" value="C1525"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a52848c7-836c-4957-932d-128f2b922099</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C1525</field>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC MPN" value="C1525"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8cf54f70-d433-4f91-882b-88412e534027</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>680uF 25V</value>
+      <footprint>Capacitor_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_Rubycon-35PX680MEFC10X16_C88725.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C88725</field>
+        <field name="MPN">35PX680MEFC10X16</field>
+        <field name="Standard Cost">0.12</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_US" description="Polarized capacitor, US symbol"/>
+      <property name="MPN" value="35PX680MEFC10X16"/>
+      <property name="Standard Cost" value="0.12"/>
+      <property name="LCSC MPN" value="C88725"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor, US symbol"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03c91e33-8b08-49c5-b679-b6a27ae63b40</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>220uF 25V</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_Rubycon-25YXJ220M6-3X11_C88729.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C88729</field>
+        <field name="MPN">25YXJ220M6.3X11</field>
+        <field name="Standard Cost">0.04</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_US" description="Polarized capacitor, US symbol"/>
+      <property name="MPN" value="25YXJ220M6.3X11"/>
+      <property name="Standard Cost" value="0.04"/>
+      <property name="LCSC MPN" value="C88729"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor, US symbol"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c89679ce-2214-45e4-92ae-b054efc79c5a</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>40V 3A</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2212271430_SMC-Sangdest-Microelectronicstronic--Nanjing-SK34A_C260394.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C260394</field>
+        <field name="MPN">SK34A</field>
+        <field name="Standard Cost">0.07</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SK34A"/>
+      <property name="Standard Cost" value="0.07"/>
+      <property name="LCSC MPN" value="C260394"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0983ee50-6466-46be-85b1-cabbc0f22f0e</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>40V 3A</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2212271430_SMC-Sangdest-Microelectronicstronic--Nanjing-SK34A_C260394.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C260394</field>
+        <field name="MPN">SK34A</field>
+        <field name="Standard Cost">0.07</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SK34A"/>
+      <property name="Standard Cost" value="0.07"/>
+      <property name="LCSC MPN" value="C260394"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12c7e960-c6f9-44f4-b913-54d5d270c440</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>0.1" Pin Header 02x08</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC MPN">C492436</field>
+        <field name="MPN">PZ254R-12-16P</field>
+        <field name="Standard Cost">0.05</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x08_Odd_Even" description="Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC MPN" value="C492436"/>
+      <property name="MPN" value="PZ254R-12-16P"/>
+      <property name="Standard Cost" value="0.05"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa809af5-1091-4ac9-a2f6-e7b919f7f586</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>0.1" Pin Header 02x08</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC MPN">C492436</field>
+        <field name="MPN">PZ254R-12-16P</field>
+        <field name="Standard Cost">0.05</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x08_Odd_Even" description="Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC MPN" value="C492436"/>
+      <property name="MPN" value="PZ254R-12-16P"/>
+      <property name="Standard Cost" value="0.05"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>faa0b10c-9114-499e-a3d1-2322baa187d1</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>5.08mm Terminal Block 01x02</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC MPN">C8465</field>
+        <field name="MPN">WJ500V-5.08-2P</field>
+        <field name="Standard Cost">0.06</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC MPN" value="C8465"/>
+      <property name="MPN" value="WJ500V-5.08-2P"/>
+      <property name="Standard Cost" value="0.06"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f590e46-d36c-4b86-ae53-278aeae3bd04</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>0.1" Pin Header 01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC MPN">C492411</field>
+        <field name="MPN">PZ254R-11-03P</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="LCSC MPN" value="C492411"/>
+      <property name="MPN" value="PZ254R-11-03P"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ae46522a-1f8b-4dce-a885-2179d9043a53</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>2.54mm Terminal Block 01x04</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC MPN">C915913</field>
+        <field name="MPN">XY308-2.54-4P</field>
+        <field name="Standard Cost">0.21</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="XY308-2.54-4P"/>
+      <property name="Standard Cost" value="0.21"/>
+      <property name="LCSC MPN" value="C915913"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f38e6520-7862-44ca-9d1a-e466446f5c4c</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>47uH 3A</value>
+      <footprint>Custom_Inductor:L_SunItechTech_SLO1040H470MTT</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2209271230_Sunltech-Tech-SLO1040H470MTT_C182153.pdf</datasheet>
+      <fields>
+        <field name="MPN">SLO1040H470MTT</field>
+        <field name="Standard Cost">0.13</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="SLO1040H470MTT"/>
+      <property name="Standard Cost" value="0.13"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8557965b-e654-4afe-aa98-ac46f2e5b407</tstamps>
+    </comp>
+    <comp ref="PART1">
+      <value>0.1" Pin Socket 01x20</value>
+      <fields>
+        <field name="LCSC MPN">C2897383</field>
+        <field name="MPN">PM254-1-20-Z-8.5</field>
+        <field name="Standard Cost">0.16</field>
+      </fields>
+      <libsource lib="Custom_Placeholder" part="Part" description="Placeholder for component with no copper."/>
+      <property name="MPN" value="PM254-1-20-Z-8.5"/>
+      <property name="Standard Cost" value="0.16"/>
+      <property name="LCSC MPN" value="C2897383"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_description" value="Placeholder for component with no copper."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51ba2bbd-3664-47a3-a15c-4268b8ec3399</tstamps>
+    </comp>
+    <comp ref="PART2">
+      <value>0.1" Pin Socket 01x20</value>
+      <fields>
+        <field name="LCSC MPN">C2897383</field>
+        <field name="MPN">PM254-1-20-Z-8.5</field>
+        <field name="Standard Cost">0.16</field>
+      </fields>
+      <libsource lib="Custom_Placeholder" part="Part" description="Placeholder for component with no copper."/>
+      <property name="MPN" value="PM254-1-20-Z-8.5"/>
+      <property name="Standard Cost" value="0.16"/>
+      <property name="LCSC MPN" value="C2897383"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_description" value="Placeholder for component with no copper."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44ad5103-3908-4783-8453-1f10b1e11cba</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC MPN">C84376</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC MPN" value="C84376"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9610f5c7-fc63-4a4f-a77a-8b5ff7502ea5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC MPN">C84376</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC MPN" value="C84376"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1afc7a6-47b2-4878-ab02-c002a37aa0b6</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC MPN">C84376</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC MPN" value="C84376"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67415aa8-36c1-46d1-a666-e7f46f1e57af</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>30k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC MPN">C126352</field>
+        <field name="MPN">RC0805FR-0730KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC MPN" value="C126352"/>
+      <property name="MPN" value="RC0805FR-0730KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1f663b8-d4bc-4294-b419-3126e657d6df</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC MPN">C84376</field>
+        <field name="MPN">RC0805FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="LCSC MPN" value="C84376"/>
+      <property name="MPN" value="RC0805FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d8fb5de-513b-48e2-a006-cf7f8179f9ae</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>Pico_H</value>
+      <footprint>Custom_Module:RPi_Pico_TH_Socket</footprint>
+      <datasheet>https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</datasheet>
+      <libsource lib="Custom_MCU" part="Pico_H" description=""/>
+      <property name="MPN" value=""/>
+      <property name="Standard Cost" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11629ab0-ce4a-4a90-8f2f-c20b15b9d646</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>74HC595</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C5947</field>
+        <field name="MPN">74HC595D,118</field>
+        <field name="Standard Cost">0.10</field>
+      </fields>
+      <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
+      <property name="MPN" value="74HC595D,118"/>
+      <property name="Standard Cost" value="0.10"/>
+      <property name="LCSC MPN" value="C5947"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="8-bit serial in/out Shift Register 3-State Outputs"/>
+      <property name="ki_keywords" value="HCMOS SR 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f591a82f-fb7e-44f3-a202-16a355719641</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>74HC595</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C5947</field>
+        <field name="MPN">74HC595D,118</field>
+        <field name="Standard Cost">0.10</field>
+      </fields>
+      <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
+      <property name="LCSC MPN" value="C5947"/>
+      <property name="MPN" value="74HC595D,118"/>
+      <property name="Standard Cost" value="0.10"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="8-bit serial in/out Shift Register 3-State Outputs"/>
+      <property name="ki_keywords" value="HCMOS SR 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d31e3349-1af7-4db3-ba6a-98e26e2d9490</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>LM2596S-ADJ</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-5_TabPin3</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2596.pdf</datasheet>
+      <fields>
+        <field name="LCSC MPN">C347423</field>
+        <field name="MPN">LM2596S-ADJ</field>
+        <field name="Standard Cost">0.33</field>
+      </fields>
+      <libsource lib="Regulator_Switching" part="LM2596S-ADJ" description="Adjustable 3A Step-Down Voltage Regulator, TO-263"/>
+      <property name="MPN" value="LM2596S-ADJ"/>
+      <property name="Standard Cost" value="0.33"/>
+      <property name="LCSC MPN" value="C347423"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pico_radar_speed_sign.kicad_sch"/>
+      <property name="ki_description" value="Adjustable 3A Step-Down Voltage Regulator, TO-263"/>
+      <property name="ki_keywords" value="Step-Down Voltage Regulator Adjustable 3A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>887f9815-498e-40e3-a5d6-f50def741cfb</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74HC595">
+      <description>8-bit serial in/out Shift Register 3-State Outputs</description>
+      <docs>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x9.9mm*P1.27mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+        <fp>SOIC*5.3x10.2mm*P1.27mm*</fp>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC595</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="tri_state"/>
+        <pin num="2" name="QC" type="tri_state"/>
+        <pin num="3" name="QD" type="tri_state"/>
+        <pin num="4" name="QE" type="tri_state"/>
+        <pin num="5" name="QF" type="tri_state"/>
+        <pin num="6" name="QG" type="tri_state"/>
+        <pin num="7" name="QH" type="tri_state"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH'" type="output"/>
+        <pin num="10" name="~{SRCLR}" type="input"/>
+        <pin num="11" name="SRCLK" type="input"/>
+        <pin num="12" name="RCLK" type="input"/>
+        <pin num="13" name="~{OE}" type="input"/>
+        <pin num="14" name="SER" type="input"/>
+        <pin num="15" name="QA" type="tri_state"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x08_Odd_Even">
+      <description>Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x08_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_MCU" part="Pico_H">
+      <docs>https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Pico_H</field>
+        <field name="Footprint">Custom_Module:RPi_Pico_TH_Socket</field>
+        <field name="Datasheet">https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO0" type="bidirectional"/>
+        <pin num="2" name="GPIO1" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="GPIO2" type="bidirectional"/>
+        <pin num="5" name="GPIO3" type="bidirectional"/>
+        <pin num="6" name="GPIO4" type="bidirectional"/>
+        <pin num="7" name="GPIO5" type="bidirectional"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GPIO6" type="bidirectional"/>
+        <pin num="10" name="GPIO7" type="bidirectional"/>
+        <pin num="11" name="GPIO8" type="bidirectional"/>
+        <pin num="12" name="GPIO9" type="bidirectional"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="GPIO10" type="bidirectional"/>
+        <pin num="15" name="GPIO11" type="bidirectional"/>
+        <pin num="16" name="GPIO12" type="bidirectional"/>
+        <pin num="17" name="GPIO13" type="bidirectional"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
+        <pin num="20" name="GPIO15" type="bidirectional"/>
+        <pin num="21" name="GPIO16" type="bidirectional"/>
+        <pin num="22" name="GPIO17" type="bidirectional"/>
+        <pin num="23" name="GND" type="power_in"/>
+        <pin num="24" name="GPIO18" type="bidirectional"/>
+        <pin num="25" name="GPIO19" type="bidirectional"/>
+        <pin num="26" name="GPIO20" type="bidirectional"/>
+        <pin num="27" name="GPIO21" type="bidirectional"/>
+        <pin num="28" name="GND" type="power_in"/>
+        <pin num="29" name="GPIO22" type="bidirectional"/>
+        <pin num="30" name="RUN" type="input"/>
+        <pin num="31" name="GPIO26_ADC0" type="bidirectional"/>
+        <pin num="32" name="GPIO27_ADC1" type="bidirectional"/>
+        <pin num="33" name="AGND" type="power_in"/>
+        <pin num="34" name="GPIO28_ADC2" type="bidirectional"/>
+        <pin num="35" name="ADC_VREF" type="unspecified"/>
+        <pin num="36" name="3V3" type="unspecified"/>
+        <pin num="37" name="3V3_EN" type="input"/>
+        <pin num="38" name="GND" type="power_in"/>
+        <pin num="39" name="VSYS" type="unspecified"/>
+        <pin num="40" name="VBUS" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Placeholder" part="Graphic">
+      <description>Placeholder for silkscreen graphic to be included on PCB.</description>
+      <fields>
+        <field name="Reference">GRAPHIC</field>
+        <field name="Value">Graphic</field>
+      </fields>
+    </libpart>
+    <libpart lib="Custom_Placeholder" part="PCB">
+      <description>Placeholder for PN and REV in copper to be included on PCB.</description>
+      <fields>
+        <field name="Reference">PCB</field>
+        <field name="Value">PCB</field>
+        <field name="Footprint">Custom_Graphic:PCB_PN_REV</field>
+        <field name="MPN">PN XXXXXXX</field>
+        <field name="REV">REV _</field>
+      </fields>
+    </libpart>
+    <libpart lib="Custom_Placeholder" part="Part">
+      <description>Placeholder for component with no copper.</description>
+      <fields>
+        <field name="Reference">PART</field>
+        <field name="Value">Part</field>
+      </fields>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_US">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Switching" part="LM2596S-ADJ">
+      <description>Adjustable 3A Step-Down Voltage Regulator, TO-263</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2596.pdf</docs>
+      <footprints>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2596S-ADJ</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-263-5_TabPin3</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2596.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="OUT" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="~{ON}/OFF" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/74xx.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Custom_MCU">
+      <uri>C:\git-checkouts\kicad-libs/lib_sch/Custom_MCU.kicad_sym</uri>
+    </library>
+    <library logical="Custom_Placeholder">
+      <uri>C:\git-checkouts\kicad-libs/lib_sch/Custom_Placeholder.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Switching">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Switching.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="3V3" pintype="unspecified"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="VSYS" pintype="unspecified"/>
+      <node ref="U2" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="16" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="3" name="+12V">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/DIGITS_RCLK">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="GPIO16" pintype="bidirectional"/>
+      <node ref="U2" pin="12" pinfunction="RCLK" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="RCLK" pintype="input"/>
+    </net>
+    <net code="5" name="/DIGITS_SPI_CS">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="GPIO17" pintype="bidirectional"/>
+      <node ref="U2" pin="10" pinfunction="~{SRCLR}" pintype="input"/>
+      <node ref="U3" pin="10" pinfunction="~{SRCLR}" pintype="input"/>
+    </net>
+    <net code="6" name="/DIGITS_SPI_MOSI">
+      <node ref="U1" pin="25" pinfunction="GPIO19" pintype="bidirectional"/>
+      <node ref="U2" pin="14" pinfunction="SER" pintype="input"/>
+    </net>
+    <net code="7" name="/DIGITS_SPI_SCK">
+      <node ref="U1" pin="24" pinfunction="GPIO18" pintype="bidirectional"/>
+      <node ref="U2" pin="11" pinfunction="SRCLK" pintype="input"/>
+      <node ref="U3" pin="11" pinfunction="SRCLK" pintype="input"/>
+    </net>
+    <net code="8" name="/DOPPLER_RADAR_IN">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="34" pinfunction="GPIO28_ADC2" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/SEG_1A">
+      <node ref="J1" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="QA" pintype="tri_state"/>
+    </net>
+    <net code="10" name="/SEG_1B">
+      <node ref="J1" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="QB" pintype="tri_state"/>
+    </net>
+    <net code="11" name="/SEG_1C">
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="QC" pintype="tri_state"/>
+    </net>
+    <net code="12" name="/SEG_1D">
+      <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="QD" pintype="tri_state"/>
+    </net>
+    <net code="13" name="/SEG_1E">
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="QE" pintype="tri_state"/>
+    </net>
+    <net code="14" name="/SEG_1F">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="QF" pintype="tri_state"/>
+    </net>
+    <net code="15" name="/SEG_1G">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="QG" pintype="tri_state"/>
+    </net>
+    <net code="16" name="/SEG_1H">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="QH" pintype="tri_state"/>
+    </net>
+    <net code="17" name="/SEG_2A">
+      <node ref="J2" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="U3" pin="15" pinfunction="QA" pintype="tri_state"/>
+    </net>
+    <net code="18" name="/SEG_2B">
+      <node ref="J2" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="QB" pintype="tri_state"/>
+    </net>
+    <net code="19" name="/SEG_2C">
+      <node ref="J2" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="QC" pintype="tri_state"/>
+    </net>
+    <net code="20" name="/SEG_2D">
+      <node ref="J2" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="QD" pintype="tri_state"/>
+    </net>
+    <net code="21" name="/SEG_2E">
+      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="QE" pintype="tri_state"/>
+    </net>
+    <net code="22" name="/SEG_2F">
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="QF" pintype="tri_state"/>
+    </net>
+    <net code="23" name="/SEG_2G">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="QG" pintype="tri_state"/>
+    </net>
+    <net code="24" name="/SEG_2H">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="QH" pintype="tri_state"/>
+    </net>
+    <net code="25" name="/~{DIGITS_OE}">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="GPIO21" pintype="bidirectional"/>
+      <node ref="U2" pin="13" pinfunction="~{OE}" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="~{OE}" pintype="input"/>
+    </net>
+    <net code="26" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J1" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="J1" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J2" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="J2" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="18" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="23" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="28" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="33" pinfunction="AGND" pintype="power_in"/>
+      <node ref="U1" pin="38" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="5" pinfunction="~{ON}/OFF" pintype="input"/>
+    </net>
+    <net code="27" name="Net-(D1-K)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="28" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="OUT" pintype="output"/>
+    </net>
+    <net code="29" name="Net-(U2-QH')">
+      <node ref="U2" pin="9" pinfunction="QH'" pintype="output"/>
+      <node ref="U3" pin="14" pinfunction="SER" pintype="input"/>
+    </net>
+    <net code="30" name="Net-(U5-FB)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="FB" pintype="input"/>
+    </net>
+    <net code="31" name="unconnected-(U1-3V3_EN-Pad37)">
+      <node ref="U1" pin="37" pinfunction="3V3_EN" pintype="input+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U1-ADC_VREF-Pad35)">
+      <node ref="U1" pin="35" pinfunction="ADC_VREF" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-GPIO0-Pad1)">
+      <node ref="U1" pin="1" pinfunction="GPIO0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-GPIO1-Pad2)">
+      <node ref="U1" pin="2" pinfunction="GPIO1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U1-GPIO2-Pad4)">
+      <node ref="U1" pin="4" pinfunction="GPIO2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U1-GPIO3-Pad5)">
+      <node ref="U1" pin="5" pinfunction="GPIO3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U1-GPIO4-Pad6)">
+      <node ref="U1" pin="6" pinfunction="GPIO4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U1-GPIO5-Pad7)">
+      <node ref="U1" pin="7" pinfunction="GPIO5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U1-GPIO6-Pad9)">
+      <node ref="U1" pin="9" pinfunction="GPIO6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U1-GPIO7-Pad10)">
+      <node ref="U1" pin="10" pinfunction="GPIO7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U1-GPIO8-Pad11)">
+      <node ref="U1" pin="11" pinfunction="GPIO8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U1-GPIO9-Pad12)">
+      <node ref="U1" pin="12" pinfunction="GPIO9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U1-GPIO10-Pad14)">
+      <node ref="U1" pin="14" pinfunction="GPIO10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U1-GPIO11-Pad15)">
+      <node ref="U1" pin="15" pinfunction="GPIO11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U1-GPIO12-Pad16)">
+      <node ref="U1" pin="16" pinfunction="GPIO12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-GPIO13-Pad17)">
+      <node ref="U1" pin="17" pinfunction="GPIO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-GPIO14-Pad19)">
+      <node ref="U1" pin="19" pinfunction="GPIO14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-GPIO15-Pad20)">
+      <node ref="U1" pin="20" pinfunction="GPIO15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-GPIO20-Pad26)">
+      <node ref="U1" pin="26" pinfunction="GPIO20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-GPIO22-Pad29)">
+      <node ref="U1" pin="29" pinfunction="GPIO22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-GPIO26_ADC0-Pad31)">
+      <node ref="U1" pin="31" pinfunction="GPIO26_ADC0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-GPIO27_ADC1-Pad32)">
+      <node ref="U1" pin="32" pinfunction="GPIO27_ADC1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-RUN-Pad30)">
+      <node ref="U1" pin="30" pinfunction="RUN" pintype="input+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-VBUS-Pad40)">
+      <node ref="U1" pin="40" pinfunction="VBUS" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U3-QH'-Pad9)">
+      <node ref="U3" pin="9" pinfunction="QH'" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

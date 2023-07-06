@@ -1,0 +1,7 @@
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,LCSC MPN,MPN,REV,Standard Cost
+5,2,"J1, J2","0.1"" Pin Header 02x08",Connector_Generic:Conn_02x08_Odd_Even,Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Horizontal,~,C492436,PZ254R-12-16P,,0.05
+6,1,J3,5.08mm Terminal Block 01x02,Connector_Generic:Conn_01x02,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",~,C8465,WJ500V-5.08-2P,,0.06
+7,1,J4,"0.1"" Pin Header 01x03",Connector:Conn_01x03_Pin,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal,~,C492411,PZ254R-11-03P,,0.01
+8,1,J5,2.54mm Terminal Block 01x04,Connector_Generic:Conn_01x04,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal",~,C915913,XY308-2.54-4P,,0.21
+10,2,"PART1, PART2","0.1"" Pin Socket 01x20",Custom_Placeholder:Part,,,C2897383,PM254-1-20-Z-8.5,,0.16
+14,1,U1,Pico_H,Custom_MCU:Pico_H,Custom_Module:RPi_Pico_TH_Socket,https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf,,,,
