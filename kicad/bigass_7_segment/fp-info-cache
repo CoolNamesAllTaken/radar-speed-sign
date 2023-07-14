@@ -1,4 +1,4 @@
-21523598854042441
+21530373461119457
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -51463,6 +51463,13 @@ Panasonic_ZNR-VF
 0
 2
 2
+Custom_Display
+OLED_SSD1306_I2C
+SSD1306 OLED Display (I2C pins only). 5V supply, 128x64 Pixels.
+OLED I2C
+0
+4
+4
 Custom_FFC-FPC
 Hirose_FH34SRJ-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal
 
@@ -51534,6 +51541,13 @@ Shielded Inductors Bourns SMD SRP7028A
 2
 2
 Custom_Inductor
+L_SunItechTech_SLO1040H470MTT
+Inductor, Sunlord, MWSA1004S, 11.0x10.0x3.8mm, https://sunlordinc.com/Download.aspx?file=L1VwbG9hZEZpbGVzL1BERl9DYXQvMjAyMjExMTUxNDQ4MDU0NTQucGRm&lan=en
+Inductor mwsa
+0
+2
+2
+Custom_Inductor
 L_Taiyo-Yuden_NR-80xx
 Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-80xx, 8.0mmx8.0mm
 inductor taiyo-yuden nr smd
@@ -51582,6 +51596,20 @@ Through hole pin header THT 2x20 2.54mm double row
 0
 40
 40
+Custom_MountingHole
+MountingHole_3.2mm_M3_Isolated
+Mounting Hole 3.2mm, no annular, M3
+mounting hole 3.2mm no annular m3
+0
+0
+0
+Custom_OptoDevice
+Everlight_ITR9608-F
+Fork-type photointerrupter (https://everlighteurope.com/index.php?controller=attachment&id_attachment=5389)
+Photointerrupter infrared LED
+0
+4
+4
 Custom_Package_CSP
 LFCSP-8-1EP_3x2mm_P0.5mm_EP1.6x1.65mm
 LFCSP 8pin Pitch 0.5mm, http://www.analog.com/media/en/package-pcb-resources/package/57080735642908cp_8_4.pdf

@@ -1367,7 +1367,6 @@
     )
   )
 
-
   (junction (at 73.66 64.77) (diameter 0) (color 0 0 0 0)
     (uuid 02f67926-08c1-47e8-8af9-83c96e5d1e15)
   )
@@ -2415,7 +2414,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8bb68837-b1ee-4670-b47c-defdf5df3beb)
   )
-  (label "DIGITS_SPI_CS" (at 200.66 80.01 0) (fields_autoplaced)
+  (label "~{DIGITS_SPI_SRCLR}" (at 200.66 80.01 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 97196c30-7b24-4c45-a967-43a7517cdaa1)
   )
@@ -2447,7 +2446,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ccb75309-4943-4d76-9bac-6573f3f15f13)
   )
-  (label "DIGITS_SPI_CS" (at 132.08 80.01 180) (fields_autoplaced)
+  (label "~{DIGITS_SPI_SRCLR}" (at 132.08 80.01 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d4812324-0148-48a6-a46e-1f0d388e6480)
   )
