@@ -1,4 +1,5 @@
 from bigass_7_segment import Bigass7SegmentDisplay
+from radar_sensor import HB100
 import utime
 
 class DemoDisplay:
@@ -15,16 +16,19 @@ class DemoDisplay:
     class DisplayMode:
         COUNT_UP = 0
         SCROLL_TEXT = 1
+        RADAR_SIGN = 2
 
     counter_value = 0
 
-    def __init__(self, display: Bigass7SegmentDisplay):
+    def __init__(self, display: Bigass7SegmentDisplay, hb100: HB100):
         self.display = display
 
         self.display_mode = self.DisplayMode.COUNT_UP
         self.next_display_mode_change_timestamp_ms = utime.ticks_ms() + self.DISPLAY_MODE_CHANGE_INTERVAL_SEC
 
         self.scroll_text_message = self.SCROLL_TEXT_MESSAGE + ('').join([' ' for i in range(self.display.num_digits)]) # pad with tail to enable scrolling to the last character
+
+        self.hb100 = hb100
     
     def reset(self):
         """
@@ -68,6 +72,9 @@ class DemoDisplay:
                     self.scroll_text_index = 0
 
             display_text = self.scroll_text_message[self.scroll_text_index:self.scroll_text_index+self.display.num_digits]
+        elif self.display_mode == self.DisplayMode.RADAR_SIGN:
+            self.hb100.update()
+            display_text = self.hb100.get_speed_str()
         else: # invalid display mode, reset
             self.display_mode = self.DisplayMode.COUNT_UP
             display_text = "  " # blanking during transition

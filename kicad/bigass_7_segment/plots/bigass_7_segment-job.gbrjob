@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "(7.0.0)"
+      "Version": "7.0.7"
     },
-    "CreationDate": "2023-06-29T13:30:24-07:00"
+    "CreationDate": "2023-09-04T15:56:20-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "bigass_7_segment",
       "GUID": "62696761-7373-45f3-975f-7365676d656e",
-      "Revision": "B"
+      "Revision": "C"
     },
     "Size": {
       "X": 30.05,
