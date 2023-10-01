@@ -5,6 +5,7 @@ class HB100:
     LOW_PASS_FILTER_WEIGHT = 0.8 # 1.0 = no filtering
     HOLD_INTERVAL_MS = 1000
     SPEED_BUFFER_SIZE = 10
+    SPEED_BUFFER_SAMPLE_INTERVAL_MS = 10
 
     class SpeedFilterMode:
         LOW_PASS = 0
@@ -19,6 +20,16 @@ class HB100:
         self.speed_filter_mode = self.SpeedFilterMode.BUFFER_MAX
         self.speed_buffer = [0.0]*self.SPEED_BUFFER_SIZE
         self.speed_buffer_index = 0
+        self.speed_buffer_prev_index = self.SPEED_BUFFER_SIZE-1
+        self.speed_buffer_next_sample_timestamp_ms = 0
+    
+    def increment_speed_buffer_index(self, index):
+        """
+        Helper function for wrapping indices on the speed buffer.
+        """
+        if index >= len(self.speed_buffer)-1:
+            return 0
+        return index + 1
 
     def rising_edge_isr(self):
         """
@@ -37,10 +48,14 @@ class HB100:
             if self.speed_filter_mode == self.SpeedFilterMode.LOW_PASS:
                 self.speed = new_speed * self.LOW_PASS_FILTER_WEIGHT + (1 - self.LOW_PASS_FILTER_WEIGHT)*self.speed    
             elif self.speed_filter_mode == self.SpeedFilterMode.BUFFER_MAX:
-                self.speed_buffer[self.speed_buffer_index] = new_speed
-                self.speed_buffer_index += 1
-                if self.speed_buffer_index >= len(self.speed_buffer):
-                    self.speed_buffer_index = 0
+                sample_timestamp = utime.ticks_ms()
+                if sample_timestamp < self.speed_buffer_next_sample_timestamp_ms:
+                    return # limit buffer updates so that faster speeds don't fall out of the buffer too quickly
+                self.speed_buffer[self.speed_buffer_index] = new_speed * self.LOW_PASS_FILTER_WEIGHT + (1 - self.LOW_PASS_FILTER_WEIGHT)*self.speed_buffer[self.speed_buffer_prev_index]
+                self.speed_buffer_next_sample_timestamp_ms = sample_timestamp + self.SPEED_BUFFER_SAMPLE_INTERVAL_MS
+                self.speed_buffer_index = self.increment_speed_buffer_index(self.speed_buffer_index)
+                self.speed_buffer_prev_index = self.increment_speed_buffer_index(self.speed_buffer_prev_index)
+
                 self.speed = max(self.speed_buffer)
 
     def update(self):

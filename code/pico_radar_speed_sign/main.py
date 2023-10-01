@@ -4,9 +4,9 @@ from radar_sensor import HB100
 from demo_display import DemoDisplay
 import utime
 
-SOFTWARE_VERSION = "0.1.0"
+SOFTWARE_VERSION = "0.2.0"
 
-DEMO_MODE = True
+DEMO_MODE = False
 
 DIGITS_SPI_PORT = 0
 DIGITS_SPI_MOSI_PIN = 19
