@@ -1,0 +1,3 @@
+[submodule "code/pico_cpp_radar_speed_sign/modules/pico-docker"]
+	path = code/pico_cpp_radar_speed_sign/modules/pico-docker
+	url = git@github.com:CoolNamesAllTaken/pico-docker.git

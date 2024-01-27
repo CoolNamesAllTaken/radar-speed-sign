@@ -70,9 +70,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "plots/")
     )
   )
 
@@ -855,10 +855,10 @@
     )
   )
 
-  (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
+  (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (tstamp 698b257b-676b-4bb7-a0dd-55d9ab219e22)
-    (at 93 43)
-    (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+    (at 93.5 43)
+    (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "MPN" "RC0402FR-07287RL")
     (property "Sheetfile" "hb100_amplifier.kicad_sch")
@@ -868,43 +868,43 @@
     (property "ki_keywords" "R res resistor")
     (path "/18ade455-df37-45c9-ab2b-d883f89c7684")
     (attr smd)
-    (fp_text reference "R10" (at 0.9 1.2) (layer "F.SilkS")
+    (fp_text reference "R10" (at 0 -1.43) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp cfc05ac2-3956-40ff-8d80-eda6d4161a90)
+      (tstamp 9de94d7f-bb08-47ca-9814-89c521bf3d99)
     )
-    (fp_text value "287R" (at 0 1.17) (layer "F.Fab")
+    (fp_text value "287R" (at 0 1.43) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 21645dad-8837-418c-807e-72ceed7999be)
+      (tstamp 6427ea58-f41c-4d5b-a593-bd799d9e2f66)
     )
     (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
-        (effects (font (size 0.26 0.26) (thickness 0.04)))
-      (tstamp 9f1baa2b-f080-47c2-86b8-1b53a36aeedd)
+        (effects (font (size 0.4 0.4) (thickness 0.06)))
+      (tstamp 8b2aa357-1ff2-42f6-ad23-501415d9799a)
     )
-    (fp_line (start -0.153641 -0.38) (end 0.153641 -0.38)
-      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 4d25e6f7-eb7d-4d80-923e-ac5b925e15d2))
-    (fp_line (start -0.153641 0.38) (end 0.153641 0.38)
-      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 6f5a0cf4-ca8c-487b-bbf9-8877537234ca))
-    (fp_line (start -0.93 -0.47) (end 0.93 -0.47)
-      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 51644cee-df61-402b-9cff-6dac764f0ff0))
-    (fp_line (start -0.93 0.47) (end -0.93 -0.47)
-      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 3f526929-2f0a-4179-ad64-e18930af6996))
-    (fp_line (start 0.93 -0.47) (end 0.93 0.47)
-      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b034235a-e778-41c8-97e4-d17704e3f249))
-    (fp_line (start 0.93 0.47) (end -0.93 0.47)
-      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp e53963b1-7e09-48db-b74b-b311fed56159))
-    (fp_line (start -0.525 -0.27) (end 0.525 -0.27)
-      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp a4e96ffa-7bd0-4a1b-87e6-49f34fb47048))
-    (fp_line (start -0.525 0.27) (end -0.525 -0.27)
-      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 7389bdb1-f40e-46e7-b810-24ea3bd7a253))
-    (fp_line (start 0.525 -0.27) (end 0.525 0.27)
-      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 7a61f46b-96a5-4f4b-80c6-8e808e4fc42b))
-    (fp_line (start 0.525 0.27) (end -0.525 0.27)
-      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 6ce669b5-18dd-4f16-80cc-3abd54e0f829))
-    (pad "1" smd roundrect (at -0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 15 "Net-(D2-K)") (pintype "passive") (tstamp 98838913-1af7-4338-9840-fa2ff283f5ae))
-    (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 2 "GND") (pintype "passive") (tstamp 3e356241-1496-4440-a8cd-79c05f93b339))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (fp_line (start -0.237258 -0.5225) (end 0.237258 -0.5225)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp c58d7917-9746-4392-82d5-90fa5717bef6))
+    (fp_line (start -0.237258 0.5225) (end 0.237258 0.5225)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 8456e350-5c5a-4e28-9c42-bdb4ee6bd96d))
+    (fp_line (start -1.48 -0.73) (end 1.48 -0.73)
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d2a985d7-43cb-4c78-a441-16295f68007a))
+    (fp_line (start -1.48 0.73) (end -1.48 -0.73)
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2ac15ac7-b217-40e5-8378-b34a479eb3da))
+    (fp_line (start 1.48 -0.73) (end 1.48 0.73)
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp df44d21c-7af4-4157-a2b0-d6258e705113))
+    (fp_line (start 1.48 0.73) (end -1.48 0.73)
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b6ea140a-3e83-445a-b95b-0729d0666aec))
+    (fp_line (start -0.8 -0.4125) (end 0.8 -0.4125)
+      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 102f65b3-c713-49ba-b624-0449bea1f67f))
+    (fp_line (start -0.8 0.4125) (end -0.8 -0.4125)
+      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp de4c54c5-53b8-4c58-bc0d-8319d6adb749))
+    (fp_line (start 0.8 -0.4125) (end 0.8 0.4125)
+      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 950891ea-2ee2-4cf3-ae2f-54015dbbeb79))
+    (fp_line (start 0.8 0.4125) (end -0.8 0.4125)
+      (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 88d9841e-82a5-4ba2-a23b-fb4e87699ba6))
+    (pad "1" smd roundrect (at -0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+      (net 15 "Net-(D2-K)") (pintype "passive") (tstamp 4f077847-dcd5-4679-9830-d54944de6022))
+    (pad "2" smd roundrect (at 0.825 0) (size 0.8 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+      (net 2 "GND") (pintype "passive") (tstamp 89e4c5b7-8788-4933-abb5-13a757c62389))
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1144,7 +1144,7 @@
     (property "Standard Cost" "")
     (property "ki_description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8")
     (property "ki_keywords" "dual opamp")
-    (path "/7a794581-7f75-4613-a12b-96658b02c57c")
+    (path "/96f64f87-6b8b-41c5-aaa0-6cb0a608aedb")
     (attr smd)
     (fp_text reference "U1" (at -2.5 -3.43) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
@@ -2745,26 +2745,41 @@
         (xy 96.480315 43.443039)
         (xy 96.427511 43.488794)
         (xy 96.376 43.5)
-        (xy 94.118195 43.5)
-        (xy 94.051156 43.480315)
-        (xy 94.005401 43.427511)
-        (xy 93.995457 43.358353)
-        (xy 94.006794 43.32154)
-        (xy 94.019096 43.296373)
-        (xy 94.019098 43.29637)
-        (xy 94.025854 43.25)
-        (xy 93.5 43.25)
-        (xy 93.5 42.75)
-        (xy 94.025852 42.75)
-        (xy 94.019096 42.703625)
-        (xy 93.962663 42.588189)
-        (xy 93.87181 42.497336)
-        (xy 93.756374 42.440903)
-        (xy 93.681536 42.43)
-        (xy 93.624 42.43)
-        (xy 93.556961 42.410315)
-        (xy 93.511206 42.357511)
-        (xy 93.5 42.306)
+        (xy 95.095156 43.5)
+        (xy 95.028117 43.480315)
+        (xy 94.982362 43.427511)
+        (xy 94.971698 43.364424)
+        (xy 94.975 43.329208)
+        (xy 94.975 43.25)
+        (xy 94.199 43.25)
+        (xy 94.131961 43.230315)
+        (xy 94.086206 43.177511)
+        (xy 94.075 43.126)
+        (xy 94.075 42.275)
+        (xy 94.575 42.275)
+        (xy 94.575 42.75)
+        (xy 94.974999 42.75)
+        (xy 94.974999 42.670803)
+        (xy 94.972148 42.640393)
+        (xy 94.927346 42.512354)
+        (xy 94.846792 42.403207)
+        (xy 94.737645 42.322653)
+        (xy 94.609602 42.27785)
+        (xy 94.579207 42.275)
+        (xy 94.575 42.275)
+        (xy 94.075 42.275)
+        (xy 94.070796 42.275001)
+        (xy 94.070774 42.275002)
+        (xy 94.040399 42.27785)
+        (xy 94.040394 42.277851)
+        (xy 93.912354 42.322653)
+        (xy 93.803207 42.403207)
+        (xy 93.72377 42.510842)
+        (xy 93.668122 42.553092)
+        (xy 93.598466 42.558551)
+        (xy 93.536917 42.525483)
+        (xy 93.503016 42.464389)
+        (xy 93.5 42.437208)
         (xy 93.5 42)
         (xy 91.679288 42)
         (xy 91.612249 41.980315)
@@ -5188,6 +5203,133 @@
         (xy 59.802037 19.400501)
         (xy 115.797963 19.400501)
       )
+    )
+  )
+  (group "" (id 3d3f31e2-b27c-4529-aa4c-4702a3f3423b)
+    (members
+      001591c1-269d-4686-be14-d30840d2c6af
+      03dce401-b81a-4e40-a71d-096cbc8803dd
+      04773ac2-4f54-47dd-bd43-663dea4f7b6d
+      06432baf-4519-42ff-bbd6-4ac5062c8888
+      07774c9c-46d2-4452-a37a-eb893c408d9c
+      07c4b074-8a41-461d-a7c2-e26a5eaaa5bc
+      091c0d31-58bb-409a-b128-3a3b8adc1edd
+      0bb69795-89fa-4bd8-980c-9a2bcd993479
+      0cb8805e-7f2d-4fcd-b4f9-bc459ea8ae0f
+      0d684440-6134-4ff0-8bf3-51924e80520e
+      1217f517-2a6e-4625-9bba-cc4c99bd45c3
+      1366b231-99ce-4f2a-9dbb-0c0318e25ea5
+      13b9b785-5ad9-4df4-85f6-203cf0729163
+      169501c1-f486-4885-9c03-be71a3210be4
+      17b79a67-2a25-4455-bedf-80b13b17e08f
+      1a388952-7297-4ece-a039-b39e13ce87ae
+      1e7cd026-61b4-4301-bfef-6ccb4beeee1a
+      1f72a348-da4a-44c5-93d5-c5dde3b6ad23
+      25e7088b-c502-4eb1-a6b7-68d98711d790
+      26e43582-bdde-464c-8bde-89cedb0c1b5b
+      29d652e7-34e6-47ce-bd8b-9903fde5475a
+      29e4ec2e-5494-4145-955c-1016ba439aa0
+      3020eb3a-335f-491e-81c0-16b60a1fd793
+      34863fe4-ceb5-4cf3-9833-2e0af93a75e3
+      34a6f324-f7b3-43e7-8b3d-a9137a8384c4
+      355a6b93-7910-4190-8f6f-4fc9b9811521
+      3595a49a-d861-44d9-a585-f3e5e703722e
+      3bc8c419-fc21-4884-b8f2-2c2ae9f7ebd6
+      3d33db02-46df-4aab-bf2b-cee4c6c5d8db
+      4035fe32-adf5-49cd-9857-f3a5b84867f0
+      42664bb7-bdf2-4f58-8431-9b2d53f3e254
+      431a0319-5bb5-46f3-a2d2-9d5ce38a288c
+      43eb3b41-3502-4a50-aa38-543de0c6fd46
+      47c69cbc-6ca2-4d13-922c-a0b629c7958a
+      483d98a5-7b74-4d78-83a9-54bcd32f92cd
+      49195809-2d04-46e9-98a9-d7b21384846a
+      495e872a-cf41-45a1-92f0-49fc96cf8313
+      4b079139-40eb-4956-9c9c-291d6a82da46
+      547393e7-88e1-41b4-8402-9a8630ffc8e1
+      54b63fc6-600d-46bc-bc3a-7ed5051629ed
+      56176643-61f5-4c0e-913a-f73ccd4bf1b3
+      590be372-b252-4869-9e66-46fd6f4375de
+      5a86d11b-75ab-4173-80ae-f8f6613ea0af
+      5c205526-45f1-45f8-a38f-fbf725337897
+      5c694a09-ff32-4f8c-bab8-579cef6252b2
+      5faec784-a724-4849-a001-196091db3468
+      60d3cf6d-2639-4349-82c1-4fdecc52b556
+      638508f5-fceb-4199-a2d8-7641ca851a0d
+      698b257b-676b-4bb7-a0dd-55d9ab219e22
+      6b4b90b0-4699-44ac-a981-1e13a60c9f0d
+      6ba53c21-f754-4c06-8bc3-eb40459a0e43
+      6d14502e-a75c-4c86-9daf-62c4a2ae3f09
+      6d75b1c8-0f5c-405c-be97-21ae108b79f6
+      70dc92bc-8d6a-4903-b34e-751fdd7a970b
+      72046bd1-5f84-4506-be76-09bdedc4986e
+      7221741b-8033-4dfe-9e84-335dce42bdaa
+      72fac255-9331-408b-be53-7a0579a5e9a2
+      731e6589-00e0-44e6-94dd-202d7a8ef54c
+      76360a0a-d278-49e3-91ac-297b62d6a508
+      766a45ea-e9dd-41e7-a8f2-22281b4d8fa6
+      771d9d5b-95e1-432f-945c-4f36cf566caf
+      79a84287-69e3-40b7-ae8a-36f6e205d333
+      7f751966-794d-4ccd-907c-bfc0fcd01b04
+      806bb606-69c3-40fa-8755-a58d9f761b27
+      80c0189c-416e-4fdc-8221-99031726911c
+      8341aa6e-624b-4da4-a702-20c5ff3945b9
+      84a0cd9b-5b05-4d69-9a10-b8d84b112366
+      873bd5d5-b9c5-411b-bdc3-7135e602a903
+      883235e0-7477-4464-bf7f-608aba6cca0d
+      893a55cd-bd5d-4116-a3e6-dc24e3cb0c23
+      8a17108f-8ed2-4d34-9b88-2805dec4987b
+      90a87223-b1e0-4bfe-81c4-a18c6ed90858
+      90be3336-0a69-4135-8fa8-27609bd430fc
+      936e80a7-c67a-43d2-ae99-abd1fd078277
+      94dba440-3976-4ff0-9034-43f15d565712
+      98db40be-5372-4fac-8d73-22940aad5067
+      98ecb20a-1652-4c3b-a4ee-cf91ff0ed33d
+      9c582a49-0096-48a3-b6c1-304586decc42
+      9fded5b0-a925-4bed-954d-7008aef7fcdb
+      a1798c07-b773-4e4e-8d81-678b1d3c0748
+      a25d28c2-ddc8-4b91-b163-a3137476e057
+      a2acda12-f235-492a-8df3-87176cac21f6
+      a821e258-26f6-457c-9ffc-67ecc3e22009
+      abc0ef44-c052-4384-9296-cf0b55275c75
+      ad7d42bf-1028-44a5-9cb0-d1b528e17e33
+      af77d4a4-bd2f-49d6-b7b5-ad1923029ddd
+      b26bdaa5-b333-4e9e-ae6a-bee6d901bcea
+      ba17a38f-b399-4f9b-8d19-2d8d088062d9
+      bd70cd98-321a-4ec7-92be-aa7ce27996f7
+      bd99da49-f850-4bdb-851b-8136c76daf8e
+      c354044f-884c-4934-8738-9a597c22cc3c
+      c71c6c2d-fc5b-41f6-badb-25780c6ea838
+      c8604c33-03a7-4b85-a92b-d45e75a87f1b
+      c9aa1bad-f0c1-4209-8143-457198640091
+      cec40114-c69d-4654-9003-8db7e2793e3c
+      cedc78f2-69f5-4932-af97-79df76623c9d
+      d0c17914-0f66-40ba-b55f-2379b377a13b
+      d2f09b6a-39df-47cb-964e-9e7cc837e15b
+      d48800ba-89f8-4a2b-afd5-093b89c08706
+      d7e04aef-72d7-49a1-b49f-b7aec4c2c1c0
+      d83b22b7-8fd5-4c90-9505-55b59a6c7586
+      d9e424e1-9fb8-4425-82a9-38a2bde9475a
+      dae6b0f3-374a-4176-b2e2-a47e454a22ab
+      db182430-a476-41b9-bbd6-9798ca05cab6
+      db9697d2-3fe1-4c2b-8f9b-3f10c3f355f3
+      e1b277b7-c39e-4e87-97a0-d431180228ac
+      e1f01892-9be6-432b-8e8c-00e5d839c7bd
+      e2fb65c4-3fe2-4d47-8f8c-2d3cfe2ff540
+      e3e25312-3bf8-42dc-bd88-d9d608778623
+      e4e3f227-3739-498b-b1a6-ca647b038bd2
+      e78c23c3-bf1d-4096-8be5-920d2911e18c
+      e80c0339-8d91-4862-84a2-dd08e096314a
+      e98532e2-10c6-44e8-b132-dc3174fa937f
+      ead0c0de-33ba-4a65-8121-97312936cbe3
+      ef1d0070-d462-41aa-b351-3ded32ed162c
+      f2d62d3e-729c-4377-8ef8-441d58f452f8
+      f4a961d0-1be4-4b33-aa84-359f8997b4b7
+      f6b5216a-767c-4d7d-bf4d-e49e75e45d52
+      f8116326-8522-41a2-9c3c-7530b9fcfc4a
+      fa1e3966-b147-4a3f-ad8d-887a5564096f
+      fae2f1e1-3fea-4837-a22f-2e4962df7468
+      fcb82f71-2e0f-44a4-8efe-d55a2735cea2
+      fd85865e-c993-484c-861d-ff8e7a0eec3d
     )
   )
   (group "" (id 79a84287-69e3-40b7-ae8a-36f6e205d333)
