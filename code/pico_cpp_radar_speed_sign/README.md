@@ -11,14 +11,4 @@ Compilation is done in the included docker environment, and debugging is current
 
 ### Run the Docker Container
 
-Starting an interactive docker container on Linux or Mac. Mounts the `firmware` directory to `/root/firmware`.
-
-```bash
-docker run --name ads-bee-dev -it --mount type=bind,source="$(pwd)",target=/root/ads_bee pico-dev-image
-```
-
-Starting an interactive docker container on Windows. Mounts the `firmware` directory to `/root/firmware`.
-
-```bash
-winpty docker run --name ads-bee-dev -it --mount type=bind,source="$(pwd)",target=/root/ads_bee pico-dev-image
-```
+`docker compose up`

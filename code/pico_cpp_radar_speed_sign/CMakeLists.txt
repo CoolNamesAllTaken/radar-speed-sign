@@ -28,14 +28,26 @@ add_compile_options(
 # Source files are added with target_sources in subdirectories
 add_executable(${PROJECT_NAME} "")
 
+# Set KISS FFT options.
+# set(KISSFFT_DATATYPE int16_t)
+# set(KISSFFT_OPENMP OFF)
+# set(KISSFFT_PKGCONFIG OFF)
+# set(KISSFFT_STATIC ON) # Pico does not support shared linking.
+# set(KISSFFT_TEST OFF)
+# set(KISSFFT_TOOLS OFF)
+# set(KISSFFT_USE_ALLOCA OFF)
+# set(KISSFFT_TEST OFF)
+
 add_subdirectory(src)
 add_subdirectory(inc)
 
-# In case there are files directly in src and inc
+# Add these directories to allow relative include paths from other directories.
 target_include_directories(${PROJECT_NAME} PRIVATE 
-    src
     inc
+    fft
 )
+
+add_subdirectory(fft)
 
 # Create C header file with the name <pio program>.pio.h
 # pico_generate_pio_header(${PROJECT_NAME}  
@@ -52,6 +64,7 @@ target_link_libraries(${PROJECT_NAME}
     hardware_pio
     hardware_pwm
     hardware_adc
+    hardware_dma
 )
 
 # Firmware: Create map/bin/hex file etc
