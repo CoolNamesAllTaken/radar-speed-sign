@@ -1,3 +1,6 @@
 [submodule "code/pico_cpp_radar_speed_sign/modules/pico-docker"]
 	path = code/pico_cpp_radar_speed_sign/modules/pico-docker
 	url = git@github.com:CoolNamesAllTaken/pico-docker.git
+[submodule "code/pico_cpp_radar_speed_sign/modules/kissfft"]
+	path = code/pico_cpp_radar_speed_sign/modules/kissfft
+	url = git@github.com:mborgerding/kissfft.git
