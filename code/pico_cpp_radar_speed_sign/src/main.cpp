@@ -21,7 +21,6 @@ int main() {
     hb100->Init();
 
     while (true) {
-        printf("UPDATE\r\n");
         hb100->Update();
     }
 

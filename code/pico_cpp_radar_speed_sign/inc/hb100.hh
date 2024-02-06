@@ -13,8 +13,8 @@ public:
         // ADC Clock is 48MHz, each conversion takes 96 cycles.
         // Divider DIV sets ADC to start sampling every DIV+1 cycles.
         // Thus DIV >= 95.
-        // For 6.208kHz ADC sample rate, divider should be 7731. Set to 7000 to be safe.
-        uint16_t adc_clk_div = 6e3;
+        // For 6.208kHz ADC sample rate, divider should be 7731. Set to 5999 to be safe.
+        uint16_t adc_clk_div = 5999;
         uint16_t adc_buf_num_samples = 1e3; // number of samples per DMA buffer
         uint16_t capture_status_led = 25;
     };

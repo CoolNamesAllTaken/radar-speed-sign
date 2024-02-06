@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pico-cpp-radar-speed-sign-scripts"
+version = "0.1.0"
+description = ""
+authors = ["John McNelly <jkailimcnelly@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pico_cpp_radar_speed_sign_scripts"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.3"
+matplotlib = "^3.8.2"
+pyserial = "^3.5"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

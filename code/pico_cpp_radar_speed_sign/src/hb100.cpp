@@ -126,29 +126,94 @@ void HB100::Update() {
         next_fft_dma_buf_ = adc_dma_buf2_;
 
         dma_channel_wait_for_finish_blocking(dma_chan1_);
+        #ifdef PRINT_DMA_BUF
         printf("adc_dma_buf1=\r\n");
         for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
             printf("%d ", adc_dma_buf1_[i]);
         }
         printf("\r\n");
+        #endif
+        #ifdef PRINT_FFT_OUT_BUF
+        printf("CHAN1: ");
+        #endif
     } else {
         dma_channel_set_write_addr(dma_chan1_, adc_dma_buf1_, true);
         next_fft_dma_buf_ = adc_dma_buf1_;
 
         dma_channel_wait_for_finish_blocking(dma_chan2_);
+        #ifdef PRINT_DMA_BUF
         printf("adc_dma_buf2=\r\n");
         for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
             printf("%d ", adc_dma_buf2_[i]);
         }
         printf("\r\n");
+        #endif
+        // #define PRINT_FFT_OUT_BUF
+        #ifdef PRINT_FFT_OUT_BUF
+        for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
+            printf("%d\t", fft_out_buf_[i].r);
+        }
+        printf("\r\n");
+        #endif
     }
 
     // printfs are good placeholder for FFT time delay.
+
+    // Process FFT Buffer
+    // Extract DC average from FFT buffer.
+    uint32_t avg = 0;
+    for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
+        avg += fft_dma_buf_[i];
+    }
+    avg /= config_.adc_buf_num_samples;
+    // printf("AVG=%d :", avg);
+    // Create FFT input buffer with DC component subtracted and integer values (DC centered at 0).
+    kiss_fft_cpx fft_in_buf[config_.adc_buf_num_samples];
+    for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
+        fft_in_buf[i].r = static_cast<kiss_fft_scalar>(fft_dma_buf_[i]) - static_cast<kiss_fft_scalar>(avg);
+        fft_in_buf[i].i = 0; // set imaginary value to 0
+    }
+
+    // Compute FFT
+    kiss_fft(fft_cfg_, fft_in_buf, fft_out_buf_);
+
+    // Convert FFT output values to power
+    uint32_t fft_out_power_buf[config_.adc_buf_num_samples];
+    for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
+        fft_out_power_buf[i] = static_cast<uint32_t>(
+            static_cast<int32_t>(fft_out_buf_[i].r)*static_cast<int32_t>(fft_out_buf_[i].r) + 
+            static_cast<int32_t>(fft_out_buf_[i].i)*static_cast<int32_t>(fft_out_buf_[i].i)
+        );         
+    }
+
+    #define PRINT_FFT_POWER_BUF
+    #ifdef PRINT_FFT_POWER_BUF
+    // Print FFT
+    for (uint16_t i = 0; i < config_.adc_buf_num_samples; i++) {
+        printf("%d\t", fft_out_power_buf[i]);
+    }
+    printf("\r\n");
+    #endif
+
+    // Extract largest magnitude velocity bin.
+    // F_samp = 48MHz / (6000 clks/sample) = 8kHz
+    // F_bin = F_samp / 2 / n_bins * i_bin = 8kHz / 2 / 1000 * i_bin = 4 * i_bin
+    uint16_t fft_max_idx = 0;
+    for (uint16_t i = 0; i < config_.adc_buf_num_samples*3/4; i++) {
+        if (fft_out_power_buf[i] > fft_out_power_buf[fft_max_idx]) {
+            fft_max_idx = i;
+        }
+    }
+    // V_mph = Fd / 31.36
+    // printf("\tMax Index:%d\tMax Freq:%dHz\tV:%.2fmph\tMax Val:%.2f\r\n", fft_max_idx, fft_max_idx*4, static_cast<float>(fft_max_idx) * 4.0f / 31.36f, fft_out_power_buf[fft_max_idx]);
 
     fft_dma_buf_ = next_fft_dma_buf_; // prepare to look at the other DMA buffer next time.
 }
 
 HB100::~HB100() {
+    kiss_fft_free(fft_cfg_);
+    free(fft_out_buf_);
+
     free(adc_dma_buf1_);
     free(adc_dma_buf2_);
 }

@@ -65,6 +65,7 @@ target_link_libraries(${PROJECT_NAME}
     hardware_pwm
     hardware_adc
     hardware_dma
+    kissfft
 )
 
 # Firmware: Create map/bin/hex file etc
