@@ -5,6 +5,8 @@
 #include "malloc.h"
 #include "stdio.h"
 
+#include "fft_utils.hh" // for window function
+
 HB100::HB100(HB100Config config_in) 
 : config_(config_in)
 , fft_dma_buf_(NULL)
@@ -115,6 +117,8 @@ void HB100::Init() {
     fft_dma_buf_ = adc_dma_buf1_;
 }
 
+
+
 void HB100::Update() {
     // NOTE: This method assumes that the FFT computation interval takes longer than the ADC data collection interval
     // that runs via DMA.
@@ -158,6 +162,9 @@ void HB100::Update() {
     }
 
     // printfs are good placeholder for FFT time delay.
+
+    // Apply Hanning Window
+    ApplyHanningWindowUint16(fft_dma_buf_, config_.adc_buf_num_samples);
 
     // Process FFT Buffer
     // Extract DC average from FFT buffer.
