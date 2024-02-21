@@ -1,0 +1,30 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+J1,01x02 2.54mm Pin Socket,PinSocket_1x02_P2.54mm_Vertical,0,0,-90,bottom
+J2,01x02 2.54mm Pin Socket,PinSocket_1x02_P2.54mm_Vertical,-2.54,-34.2,-90,bottom
+J3,01x02 2.54mm Pin Socket,PinSocket_1x02_P2.54mm_Vertical,35.62,-34.2,-90,bottom
+J4,01x02 2.54mm Pin Socket,PinSocket_1x02_P2.54mm_Vertical,35.62,0,-90,bottom
+C1,0.1uF,C_0603_1608Metric,19,-18,180,top
+C2,10uF,C_0805_2012Metric,25,-5,-90,top
+C3,10uF,C_0805_2012Metric,20,-11,0,top
+C4,10uF,C_0805_2012Metric,20,-8.999999,0,top
+C5,2.2nF,C_0603_1608Metric,12.000001,-20,90,top
+C6,4.7uF,C_0805_2012Metric,17,-29.5,90,top
+C7,10uF,C_0805_2012Metric,22.350001,-27.5,-90,top
+C8,4.7uF,C_0805_2012Metric,12.05,-16.050001,90,top
+C9,2.2nF,C_0603_1608Metric,24.000001,-22,90,top
+C11,4.7uF,C_0805_2012Metric,6,-20,90,top
+D1,1N5819,D_SOD-123,29,-8,-90,top
+D2,RED,LED_0603_1608Metric,20,-13,180,top
+J5,01x03 2.54mm Pin Header,PinHeader_1x03_P2.54mm_Horizontal,32,-13,0,top
+R1,1M,R_0603_1608Metric,10,-20,90,top
+R2,10k,R_0603_1608Metric,8,-20,90,top
+R3,100k,R_0603_1608Metric,25,-26.5,180,top
+R4,100k,R_0603_1608Metric,20.349999,-27.5,-90,top
+R5,330k,R_0603_1608Metric,18,-26.5,180,top
+R6,8.2k,R_0603_1608Metric,14,-16,-90,top
+R7,1M,R_0603_1608Metric,22,-22,90,top
+R8,0R,R_0805_2012Metric,27,-21,0,top
+R9,12k,R_0603_1608Metric,25,-31.5,90,top
+R10,287R,R_0603_1608Metric,23.5,-13,0,top
+U1,LMV358,SOIC-8_3.9x4.9mm_P1.27mm,17,-22,0,top
+U2,LM1117IMPX-3.3,SOT-223-3_TabPin2,18.5,-4,180,top

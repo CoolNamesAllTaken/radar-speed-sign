@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\git-checkouts\radar-speed-sign\kicad\hb100_amplifier\hb100_amplifier.kicad_sch</source>
+    <date>2/20/2024 10:38:15 PM</date>
+    <tool>Eeschema 7.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>HB100 Amplifier</title>
+        <company>pantsforbirds.com</company>
+        <rev>A</rev>
+        <date>2024-02-20</date>
+        <source>hb100_amplifier.kicad_sch</source>
+        <comment number="1" value="John McNelly - jkailimcnelly@gmail.com"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C1591</field>
+        <field name="MPN">CL10B104KB8NNNC</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B104KB8NNNC"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C1591"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ef37f08-c3f0-4105-ae64-e656304b8298</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C95841</field>
+        <field name="MPN">CL21B106KOQNNNE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B106KOQNNNE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C95841"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17a28d0a-a7ed-4a59-a57e-7cf26ee316ae</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C95841</field>
+        <field name="MPN">CL21B106KOQNNNE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B106KOQNNNE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C95841"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93f434c5-bce3-43d9-978a-3d653eeafa83</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C95841</field>
+        <field name="MPN">CL21B106KOQNNNE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B106KOQNNNE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C95841"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>695e30fc-f8ee-4d1c-8968-c1d39b5c0c6e</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>2.2nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C16033</field>
+        <field name="MPN">CL10B222KB8NNNC</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B222KB8NNNC"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C16033"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d541491f-453d-42c8-8510-bde895306c59</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C560882</field>
+        <field name="MPN">CS2012X7R475K350NRE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CS2012X7R475K350NRE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C560882"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d915e90-d6bf-4996-be0d-a1bcfff69a30</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C95841</field>
+        <field name="MPN">CL21B106KOQNNNE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B106KOQNNNE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C95841"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1fe81ec8-12ef-4c03-b0b0-391194e31ae0</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C560882</field>
+        <field name="MPN">CS2012X7R475K350NRE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CS2012X7R475K350NRE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C560882"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2a9dc12-a67f-40fb-ab40-9e2018595638</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>2.2nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C16033</field>
+        <field name="MPN">CL10B222KB8NNNC</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B222KB8NNNC"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C16033"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d161a30-c95b-4db3-a059-d1c20679a635</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C560882</field>
+        <field name="MPN">CS2012X7R475K350NRE</field>
+        <field name="Standard Cost">0.02</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CS2012X7R475K350NRE"/>
+      <property name="Standard Cost" value="0.02"/>
+      <property name="LCSC PN" value="C560882"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>02d54634-2502-412d-bb4f-54f9459221e7</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N5819</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="LCSC PN">C963381</field>
+        <field name="MPN">1N5819W</field>
+        <field name="Standard Cost">0.05</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="1N5819W"/>
+      <property name="Standard Cost" value="0.05"/>
+      <property name="LCSC PN" value="C963381"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>280cf1d4-b7ea-4fe6-afa8-4464406e0f1f</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>RED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C510027</field>
+        <field name="MPN">SML-D12U8WT86</field>
+        <field name="Standard Cost">0.07</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="SML-D12U8WT86"/>
+      <property name="Standard Cost" value="0.07"/>
+      <property name="LCSC PN" value="C510027"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97e11129-3374-4f59-b899-19640e7c393f</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>01x02 2.54mm Pin Socket</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC PN">C49661</field>
+        <field name="MPN">C49661</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="C49661"/>
+      <property name="LCSC PN" value="C49661"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>94443ca9-0943-4303-ad7c-a1580dba8f79</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>01x02 2.54mm Pin Socket</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC PN">C49661</field>
+        <field name="MPN">C49661</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="C49661"/>
+      <property name="LCSC PN" value="C49661"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dbdc8ef0-4079-4058-8144-05352f00f5b1</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>01x02 2.54mm Pin Socket</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC PN">C49661</field>
+        <field name="MPN">C49661</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="C49661"/>
+      <property name="LCSC PN" value="C49661"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33869878-3b77-4f96-97c5-3d11a3e513db</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>01x02 2.54mm Pin Socket</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="LCSC PN">C49661</field>
+        <field name="MPN">C49661</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Socket" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="MPN" value="C49661"/>
+      <property name="LCSC PN" value="C49661"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2da2d857-9925-4d9b-99ac-ff5bfee5fc51</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>01x03 2.54mm Pin Header</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <fields>
+        <field name="LCSC PN">C19190476</field>
+        <field name="MPN">P125-1103A0BR138A1</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="MPN" value="P125-1103A0BR138A1"/>
+      <property name="LCSC PN" value="C19190476"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce7a7b91-3248-485b-bb17-1fbe8a61a294</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C105578</field>
+        <field name="MPN">RC0603FR-071ML</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-071ML"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C105578"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78d3acc9-b157-44da-aa6f-2c36e16772a8</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C98220</field>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C98220"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4a22c83-f5a6-49d3-95f2-603ded56a388</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C14675</field>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C14675"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea44d63a-f49a-465c-94a2-4891a87379e8</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C14675</field>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C14675"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1e06a8dc-1569-49e3-92c3-2be12302f2d2</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>330k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C114618</field>
+        <field name="MPN">RC0603FR-07330KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-07330KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C114618"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbadc8f5-6247-4d9d-bb29-9e73e7dacecf</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>8.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C114637</field>
+        <field name="MPN">RC0603FR-078K2L</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-078K2L"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C114637"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a29401cb-32d0-4774-808e-c1d88416f5be</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C105578</field>
+        <field name="MPN">RC0603FR-071ML</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-071ML"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C105578"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25c80745-9f83-4d62-a995-4e5ad1fde8b8</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C95177</field>
+        <field name="MPN">RC0603JR-070RL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603JR-070RL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C95177"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef36f764-df9a-41e4-8e36-0ac072ffa17b</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>12k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C114659</field>
+        <field name="MPN">RC0603FR-0712KL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="RC0603FR-0712KL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C114659"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f01e93f0-5677-46db-8ece-a01271e0450e</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>287R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC PN">C227756</field>
+        <field name="MPN">AC0603FR-07287RL</field>
+        <field name="Standard Cost">0.01</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="MPN" value="AC0603FR-07287RL"/>
+      <property name="Standard Cost" value="0.01"/>
+      <property name="LCSC PN" value="C227756"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Resistor, US symbol"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18ade455-df37-45c9-ab2b-d883f89c7684</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>LMV358</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</datasheet>
+      <fields>
+        <field name="LCSC PN">C63813</field>
+        <field name="MPN">LMV358IDR</field>
+        <field name="Standard Cost">0.10</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="LM358" description="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="MPN" value="LMV358IDR"/>
+      <property name="Standard Cost" value="0.10"/>
+      <property name="LCSC PN" value="C63813"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="ki_keywords" value="dual opamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96f64f87-6b8b-41c5-aaa0-6cb0a608aedb 7a794581-7f75-4613-a12b-96658b02c57c 4feb304b-6a4e-4f90-9c8d-37cc70f99428</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LM1117IMPX-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AZ1117.pdf</datasheet>
+      <fields>
+        <field name="LCSC PN">C23984</field>
+        <field name="MPN">LM1117IMPX-3.3/NOPB</field>
+        <field name="Standard Cost">0.21</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="AZ1117-3.3" description="1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263"/>
+      <property name="MPN" value="LM1117IMPX-3.3/NOPB"/>
+      <property name="Standard Cost" value="0.21"/>
+      <property name="LCSC PN" value="C23984"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="hb100_amplifier.kicad_sch"/>
+      <property name="ki_description" value="1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263"/>
+      <property name="ki_keywords" value="Fixed Voltage Regulator 1A Positive LDO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3de006b0-ff02-4af6-8ab7-78efb1523421</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="LM358">
+      <description>Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM358</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Socket">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Socket</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AZ1117-3.3">
+      <description>1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AZ1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>SOT?89*</fp>
+        <fp>TO?220*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AZ1117-3.3</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AZ1117.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="3" name="/BIAS_1V65">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="4" name="/HB100_OUT">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/OP1_IN">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="6" name="/OP1_OUT">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="output"/>
+    </net>
+    <net code="7" name="/OP2_IN">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="8" name="/OP2_OUT">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pintype="output"/>
+    </net>
+    <net code="9" name="/PWM_OUT">
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="11" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(U1A--)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="15" name="VDD">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+  </nets>
+</export>

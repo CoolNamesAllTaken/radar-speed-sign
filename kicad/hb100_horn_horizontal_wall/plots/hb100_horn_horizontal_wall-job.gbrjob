@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.7"
+      "Version": "8.0.0-rc3"
     },
-    "CreationDate": "2024-01-23T00:18:07-08:00"
+    "CreationDate": "2024-02-21T00:14:42-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -76,6 +76,16 @@
       "Path": "hb100_horn_horizontal_wall-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
+    },
+    {
+      "Path": "hb100_horn_horizontal_wall-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "hb100_horn_horizontal_wall-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
+      "FilePolarity": "Positive"
     }
   ],
   "MaterialStackup": [
@@ -89,24 +99,29 @@
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
+      "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {
