@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "pico_cpp_radar_speed_sign"
+		},
+		{
+			"path": "pico_cpp_radar_speed_sign/scripts"
 		}
 	],
 	"settings": {}

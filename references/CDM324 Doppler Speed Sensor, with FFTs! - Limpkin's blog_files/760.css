@@ -1,0 +1,21 @@
+/**
+ * @brief time-flies, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author David Yim
+ *
+ * @contributeur Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-sa/2.0/fr/
+ */
+#top, #main, #sidebar, #footer p {
+  width : 760px;
+}
+#content {
+  width : 740px;
+}
+#sidebar #blognav, #sidebar #blogextra {
+  width : 380px;
+}
+#comment-form .field textarea {width:740px;}

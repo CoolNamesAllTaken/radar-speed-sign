@@ -1,0 +1,733 @@
+/* -----@Media screen Responsive css created by Shahid - Scientech IT ------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 960px) and (min-width: 200px) { 
+.navbar-wrapper { position: relative !important; }
+.navbar .navbar-nav > li > a { padding: 25px 19px; }
+.navbar-inverse { background-color: #2a2c33; }
+}
+	
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+/*Flexslider--------------------------*/
+.flex-slider-center {
+    top: 31%;
+    width: 910px;
+	}
+.slide-text-bg1 {
+    margin: 0 0 10px;
+}	
+.slide-text-bg1 h2 {
+    display: block;
+    font-size: 45px;
+    line-height: 55px;
+    margin: 0px;
+	}	
+
+.slide-text-bg2 {
+    margin: 0 0 13px;
+}	
+.slide-text-bg2 h1 {
+    display: inline-block;
+    font-size: 52px;
+    line-height: 50px;
+    margin: 0px;
+}
+.slide-text-bg2 span {
+    line-height: 50px;
+}	
+.slide-text-bg3 {
+    margin: 0 0 13px;
+}
+.slide-text-bg3 p {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+}
+.flex_btn {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding: 8px 18px;
+}
+/*Blog Page---------------*/
+.blog-post-title-wrapper {
+	width: 100%;
+}
+
+/* Added by Harish For Calendar Widget */
+.sidebar-widget div#calendar_wrap table > thead > tr > th,.footer_widget_column div#calendar_wrap table > thead > tr > th{
+	padding: 10px;
+	font-size: 12px;
+}
+.sidebar-widget div#calendar_wrap table > tbody > tr > td ,.footer_widget_column div#calendar_wrap table > tbody > tr > td{
+	padding: 8px;
+	font-size: 12px;
+}
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+/*Flexslider--------------------------*/
+.flex-slider-center {
+    top: 18.5%;
+    width: 700px;
+	}
+.slide-text-bg1 {
+    margin: 0 0 13px;
+}		
+.slide-text-bg1 h2 {
+    display: block;
+    font-size: 38px;
+    line-height: 45px;
+    margin: 0;
+	}	
+.slide-text-bg2 {
+    margin: 0 0 11px;
+	padding: 0 0 3px;
+}		
+.slide-text-bg2 h1 {
+    display: inline-block;
+    font-size: 42px;
+    line-height: 45px;
+    margin: 0;
+	padding: 0;
+}
+.slide-text-bg2 span {
+    line-height: 45px;
+}
+.slide-text-bg3 {
+    margin: 0 0 10px;
+}
+.slide-text-bg3 p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+.flex_btn {
+    font-family: 'RobotoMedium';
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    padding: 5px 12px;
+}
+.flex-direction-nav a {
+    height: 40px;
+    width: 40px;
+}
+.flex-direction-nav a:before {
+    font-size: 28px;
+    line-height: 1.4;
+}
+.flex-direction-nav .flex-prev {
+    left: 30px;
+}
+.flex-direction-nav .flex-next {
+    right: 30px;
+}
+.flexslider:hover .flex-prev {
+    left: 30px;
+}
+.flexslider:hover .flex-next {
+    right: 30px;
+}
+/*Menu Dropdown--------------*/
+.navbar-right {
+	float: left !important;
+} 
+/*About Page----------------*/
+.about-section img {
+	margin: 0 0 50px;
+}	
+/*Blog Page---------------*/
+.blog-post-title-wrapper-full {
+	width: 100%;
+}	
+.home-blog-area {
+    margin-bottom: 50px;
+}
+
+	
+	
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) { 
+/*Blog Page---------------*/
+.blog-post-title-wrapper-full {
+	width: 100%;
+}	
+.home-blog-area {
+    margin-bottom: 50px;
+}
+
+
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*Header Top Area----------------*/	
+.head-contact-social, .head-contact-info {
+    float: none;
+    text-align: center;
+	}	
+.head-contact-social {
+	display: none;
+}	
+/*Flexslider--------------------------*/
+.flex-slider-center {
+    top: 18%;
+    width: 610px;
+	}
+.slide-text-bg1 {
+    margin: 0 0 9px;
+}		
+.slide-text-bg1 h2 {
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+	}
+.slide-text-bg2 {
+    margin: 0 0 6px;
+	padding: 0 0 3px;
+}		
+.slide-text-bg2 h1 {
+    display: inline-block;
+	border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0;
+	padding: 0;
+}
+.slide-text-bg2 span {
+    line-height: 35px;
+}
+.slide-text-bg3 {
+    margin: 0 0 8px;
+}
+.slide-text-bg3 p {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+}
+.flex_btn {
+    font-family: 'RobotoBold';
+    font-size: 9px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    padding: 2px 9px;
+	border: 1px solid #FFFFFF;
+}
+.flex-direction-nav a {
+    height: 35px !important;
+    width: 35px !important;
+}
+.flex-direction-nav a:before {
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+}
+.flex-direction-nav .flex-prev {
+    left: 20px;
+}
+.flex-direction-nav .flex-next {
+    right: 20px;
+}
+.flexslider:hover .flex-prev {
+    left: 20px;
+}
+.flexslider:hover .flex-next {
+    right: 20px;
+}
+/*Menu Dropdown--------------*/
+.navbar-brand {
+	margin-right: 0px;
+}		
+.navbar-toggle {
+	float: right;
+	padding: 8px 8px;
+	margin-top: 34px;
+	margin-right: 15px;
+	margin-bottom: 34px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+}	
+.navbar .navbar-nav > li > a {
+	padding: 15px 20px;
+	font-size: 14px;
+	transition: all 0.4s ease 0s;
+}	
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus, 
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus, 
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+	background-color: transparent !important;
+}
+.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+	padding: 15px 20px 15px 20px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: #00c2a9;
+}
+.navbar > .container .navbar-brand {
+	margin-left: 15px;
+}
+.navbar-wrapper {
+	position: relative;
+	right: 0;
+	left: 0;
+	margin-top: 0px;
+	z-index: 20;
+}
+.navbar-inverse {
+    background-color: #2a2c33;
+}
+/*About Page----------------*/
+.about-section img {
+	margin: 0 0 50px;
+}
+.callout-section {
+	width: auto;
+}
+.about-section {
+	margin-bottom: 70px;
+}
+.about-section h3 {
+	padding: 0px;
+}
+.about-section p {
+	padding: 0px;
+}
+.about-social-icons {
+	padding-left: 0px;
+}
+/*Blog Page---------------------------*/
+.blog-section-left{
+	margin-right: 0px;
+}
+.blog-section-right {
+	margin-left: 0px;
+}
+.blog-post-title-wrapper {
+	width: 100%;
+}
+.blog-post-title-wrapper-full {
+	width: 100%;
+}
+.blog-detail-section {
+	margin-right: 0px;
+}
+.blog-author {
+	margin-right: 0px;
+}
+.comment-section {
+	margin-right: 0px;
+}
+.comment-form-section {
+	margin-right: 0px;
+}
+.form-inline .blog-form-group {
+	width: 100%;
+}
+.form-inline .blog-form-group-textarea {
+	width: 100%;
+}
+.pull-left-comment {
+	float: none;
+}
+.home-blog-area {
+    margin-bottom: 50px;
+}
+
+/*Portfolio Detail-----------*/
+.portfolio-detail-pagi, 
+.portfolio-detail-description,
+.portfolio-detail-info {
+	margin-right: 0px;
+}
+/*Contact Page----------------*/
+.form-inline .cont-form-group {
+	width: 99.4%;
+}
+.form-inline .cont-form-group-textarea {
+	width: 100%;
+}
+/*Footer social icons*/
+.footer-social-icons {
+	text-align: left;
+}
+.footer-social-icons li {
+	margin-bottom: 10px;
+}
+.footer-social-icons li > a > i {
+	font-size: 27px;
+	line-height: 35px;
+}
+/*Widget Css*/
+.sidebar-widget div#calendar_wrap table#wp-calendar,
+.footer_widget_column div#calendar_wrap table#wp-calendar {
+	padding: 0px;
+	width: 100%;
+}
+/*Features css*/
+.features-title {
+	margin-top: 40px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* for small size screen all the nested comments comes at the same hierarchical level*/
+.comment-section ul.children{padding-left:0px;}	
+	
+} 
+
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+/*Header Top Area----------------*/	
+.head-contact-social, .head-contact-info {
+    float: none;
+    text-align: center;
+}	
+.head-contact-social {
+	display: none;
+}
+.head-contact-info li {
+	margin-right: 10px;
+	margin-left: 10px
+}
+/*Flexslider--------------------------*/
+.page-mycarousel {
+	margin-bottom: 80px;
+}
+.flex-slider-center {
+    top: 5%;
+    width: 215px;
+	}
+.slide-text-bg1 {
+    margin: 0 0 4px;
+}		
+.slide-text-bg1 h2 {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+	}
+.slide-text-bg2 {
+	margin: 0 0 0px;
+	padding: 0;
+}	
+.slide-text-bg2 h1 {
+    display: inline-block;
+	border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+	padding: 0;
+}
+.slide-text-bg2 span {
+    line-height: 20px;
+}
+.slide-text-bg3 {
+    margin: 0 0 0;
+    padding: 0;
+}
+.slide-text-bg3 p {
+    font-size: 10px;
+    line-height: 13px;
+    margin: 0;
+}
+
+
+.flex_btn {
+    border: 1px solid #FFFFFF;
+    font-family: 'RobotoBold';
+    font-size: 7px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    padding: 0 4px;
+}
+.flex-direction-nav a {
+    height: 30px !important;
+    width: 30px !important;
+}
+.flex-direction-nav a:before {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+}
+.flex-direction-nav .flex-prev {
+    left: 10px;
+}
+.flex-direction-nav .flex-next {
+    right: 10px;
+}
+.flexslider:hover .flex-prev {
+    left: 10px;
+}
+.flexslider:hover .flex-next {
+    right: 10px;
+}
+/*Menu Dropdown--------------*/	
+.navbar-brand {
+	margin-right: 0px;
+}		
+.navbar-toggle {
+	float: right;
+	padding: 8px 8px;
+	margin-top: 34px;
+	margin-right: 15px;
+	margin-bottom: 34px;
+	border: 1px solid transparent;
+	border-radius: 0px;
+}	
+.navbar .navbar-nav > li > a {
+	padding: 15px 20px;
+	font-size: 14px;
+	transition: all 0.4s ease 0s;
+}	
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus, 
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus, 
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+	background-color: transparent !important;
+}
+.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+	padding: 15px 20px 15px 20px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: #00c2a9;
+}
+.navbar > .container .navbar-brand {
+	padding: 22.5px 15px 22.5px 15px;
+	float: none;
+	display: block;
+}
+.navbar > .container .navbar-brand > img {
+	display: block;
+	margin: 0 auto;
+}	
+.navbar-toggle {
+	float: none;
+	padding: 8px 8px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	margin: 5px auto 20px;
+	display: block;
+}
+.navbar-wrapper {
+	position: relative;
+	right: 0;
+	left: 0;
+	margin-top: 0px;
+	z-index: 20;
+}
+.navbar-inverse {
+    background-color: #2a2c33;
+}
+/*About Page----------------*/
+.about-section img {
+	margin: 0 0 50px;
+}
+.callout-section {
+	width: auto;
+}
+.about-section {
+	margin-bottom: 60px;
+}
+.about-section h3 {
+	padding: 0px;
+}
+.about-section p {
+	padding: 0px;
+}
+.about-social-icons {
+	padding-left: 0px;
+}
+/*Blog Page---------------------------*/
+.blog-section-left{
+	margin-right: 0px;
+}
+.blog-section-right {
+	margin-left: 0px;
+}
+.blog-post-title-wrapper {
+	width: 100%;
+}
+.blog-post-title-wrapper-full {
+	width: 100%;
+}
+.blog-detail-section {
+	margin-right: 0px;
+}
+.blog-author {
+	margin-right: 0px;
+}
+.home-blog-area {
+    margin-bottom: 50px;
+}
+/*Comment*/
+.comment-section {
+	margin-right: 0px;
+}
+.comment-form-section {
+	margin-right: 10px;
+}
+.form-inline .blog-form-group {
+	width: 100%;
+}
+.form-inline .blog-form-group-textarea {
+	width: 100%;
+}
+.pull-left-comment {
+	float: none;
+}
+/*Portfolio Section------------*/
+.main-portfolio-showcase .main-portfolio-showcase-detail h4 {
+	padding: 0 0 8px;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.main-portfolio-showcase .main-portfolio-showcase-detail p {
+	font-size: 12px;
+	line-height: 17px;
+	margin: 0 0 15px;
+}
+.portfolio-icon a {
+	padding: 4px 8px;
+	border-radius: 10%;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+.portfolio-icon a > i {
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 16px;
+}
+/*Portfolio Detail-----------*/
+.portfolio-detail-pagi, 
+.portfolio-detail-description,
+.portfolio-detail-info {
+	margin-right: 0px;
+}
+/*Contact Page----------------*/
+.form-inline .cont-form-group {
+	width: 99.4%;
+}
+.form-inline .cont-form-group-textarea {
+	width: 100%;
+}
+
+/* Added by Harish For Calendar Widget */
+.sidebar-widget div#calendar_wrap table > thead > tr > th,.footer_widget_column div#calendar_wrap table > thead > tr > th{
+	padding: 7px;
+	font-size: 12px;
+}
+.sidebar-widget div#calendar_wrap table > tbody > tr > td ,.footer_widget_column div#calendar_wrap table > tbody > tr > td{
+	padding: 7px;
+	font-size: 10px;
+}
+
+/*Widget Css*/
+.sidebar-widget div#calendar_wrap table > caption, .footer_widget_column div#calendar_wrap table > caption {
+	font-size: 18px;
+}
+.sidebar-widget div#calendar_wrap table#wp-calendar,
+.footer_widget_column div#calendar_wrap table#wp-calendar {
+	padding: 0px;
+	width: 100%;
+}
+.sidebar-widget div#calendar_wrap table > tfoot > tr > td,
+.footer_widget_column div#calendar_wrap table > tfoot > tr > td {
+	font-size: 14px;
+}
+	
+/* Hide table headers (but not display: none;, for accessibility) */
+.blog-post-title-wrapper > thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.blog-post-title-wrapper > tr { border: 1px solid #ccc; }
+
+.blog-post-title-wrapper > td {
+/* Behave like a “row” */
+	border: none;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	padding-left: 50%;
+}
+
+.blog-post-title-wrapper > td:before {
+	/* Now like a table header */
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 45%;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+.wallstreet_title_head {
+	text-align: center;
+}
+.home-blog-post-detail > .date {
+    margin-right: 25px;
+}
+.home-blog-post-detail > .comment {
+    float: left;
+}
+/*Footer social icons*/
+.footer-social-icons {
+	text-align: left;
+}
+.footer-social-icons li {
+	margin-bottom: 10px;
+}
+.footer-social-icons li > a > i {
+	font-size: 24px;
+	line-height: 30px;
+}
+/*Search Btn*/
+.search_btn {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 25px;
+}
+/*Features css*/
+.features-title {
+	margin-top: 40px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*Testimonial*/
+.testimonial-area p {
+    font-size: 15px;
+}
+.testimonial-area h2 {
+    font-size: 12px;
+}
+.testimonial-area h2 > i {
+    width: 20px;
+}
+/* for small size screen all the nested comments comes at the same hierarchical level*/
+.comment-section ul.children{padding-left:0px;}
+
+}

@@ -1,0 +1,551 @@
+/**
+ * @brief time-flies, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author David Yim
+ *
+ * @contributeur Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-sa/2.0/fr/
+ */
+@import url(screen.css);
+
+body {
+  margin : 0;
+  padding : 0;
+  background : #fff;
+  color : #333;
+  width : 100%;
+  float : left;
+  font-size : 85%;
+  line-height : 1.6;
+  font-family : Georgia, "Time New Roman", Serif;
+  border-top : 5px solid #c31a0e;
+  text-align : left;
+}
+h1, h2, h3, h4 {
+  color : #333;
+  font-weight : normal;
+  font-family : Baskerville, Palatino, "Palatino Linotype", Georgia, "Time New Roman", Serif;
+}
+a, a:link, a:visited {
+  color : #c31a0e;
+  font-weight : normal;
+  text-decoration : none;
+}
+a:hover {
+  text-decoration : underline;
+}
+ul {
+  margin-left : 0;
+  list-style : none;
+}
+blockquote {
+  margin-left : -35px;
+  margin-right : 0;
+  padding-left : 35px;
+  background : url('img/blockquote.png') no-repeat left top;
+}
+pre {
+  overflow : auto;
+  width : 460px;
+  padding : 10px;
+  background : #efefef;
+}
+#page {
+  margin : 3px 0 0 0;
+  padding : 0;
+  position : relative;
+  border-top : 1px dotted #ccc;
+}
+#top {
+  margin : 0 auto 60px;
+  padding : 0 0 60px;
+  border-bottom : 1px dashed #d6e3ec;
+}
+#top h1 {
+  padding : 60px 0 0;
+}
+#top h1 a {
+  text-decoration : none;
+  color : #322;
+}
+#top #blogDescription { margin:0; }
+#prelude {
+  position : absolute;
+  left : 10px;
+  top : -50px;
+}
+#wrapper {
+  width : 100%;
+  float : left;
+  border-bottom : 1px solid;
+  margin-bottom : 1px;
+}
+#main {
+  margin : 0 auto;
+  padding : 0;
+}
+#content {
+  margin : 0;
+  padding : 0 0 60px 0;
+  float : left;
+}
+#content-info,
+#subcategories {
+  margin-bottom : 60px;
+}
+#navlinks {
+  margin-bottom : 60px;
+  padding-bottom : 60px;
+  border-bottom : 1px dashed #d6e3ec;
+  display:none !important;
+}
+.post {
+  margin : 0 0 20px 0;
+  padding : 0 0 20px 0;
+  border-bottom : 1px dashed #d6e3ec;
+}
+.post-title {
+  font-style : italic;
+  font-size : 2.4em;
+}
+.post-title a {
+  text-decoration : none;
+  color : #322;
+  border-bottom : 1px dotted #d6e3ec;
+}
+.post-info, .page-info {
+  font-size : 0.8em;
+  padding : 0;
+  font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+  color : #666666;
+  background : url('img/calendar.png') no-repeat left center;
+  margin-left : -30px;
+  padding-left : 30px;
+}
+.post-info a, .page-info a {
+  color : #355;
+  font-style : italic;
+  border-bottom : 1px dotted #d6e3ec;
+}
+.post-tags {
+  background : url('img/tag.png') no-repeat left center;
+  margin-left : -30px;
+  padding-left : 30px;
+  font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+  font-size : 0.8em;
+  font-style : italic;
+}
+.post-tags li {
+  display : inline;
+}
+.post-tags li a {
+  color : #355;
+  border-bottom : 1px dotted #d6e3ec;
+}
+.post-info-co {
+  width : 120px;
+  font-size : 1.3em;
+  font-style : italic;
+  color : #c6dbea;
+  margin-left : -135px;
+  text-align : right;
+  display:none !important;
+}
+.post-info-co a {
+  color : #355;
+  font-size : 0.6em;
+  font-style : italic;
+  font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+  display : block;
+  border-bottom : 1px dotted #d6e3ec;
+}
+.read-it {
+  color : #fff;
+  font-style : italic;
+}
+.post-excerpt img, .post-content img {
+  max-width:100%;
+}
+.post-excerpt ul, .post-content ul, #comments dd ul {
+  list-style:square;margin-left:1.5em;
+}
+.pagination {
+  margin : 0;
+  font-size : 1.25em;
+}
+#attachments {
+  margin : 0 0 60px 0;
+  padding : 0 0 40px 0;
+  border-bottom : 1px dashed;
+  font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+}
+#attachments ul li {
+  background : url('img/box.png') no-repeat left center;
+  margin-left : -30px;
+  padding-left : 30px;
+  font-size : 0.8em;
+  line-height : 2.4;
+}
+#attachments ul li:hover {
+  background : url('img/box-label.png') no-repeat left center;
+}
+#attachments ul li a {
+  border-bottom : 1px dotted #dadada;
+  padding-bottom : 2px;
+}
+#comments {
+  margin : 0 0 60px 0;
+}
+#comments dt,
+#pings dt {
+  position : relative;
+  font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+  font-size : 0.85em;
+  margin : 0 0 20px 0;
+}
+#comments dt .comment-number,
+#pings dt .ping-number {
+  position : absolute;
+  left : -25px;
+}
+#comments dd,
+#pings dd,
+#pr dd {
+  margin-left : 0;
+  margin-bottom : 2em;
+  border-bottom : 1px dashed;
+}
+#comment-form {
+  margin : 0 0 60px 0;
+  font-size : 0.9em
+}
+#comment-form fieldset {
+  margin : 0;
+  padding : 0;
+  border : none;
+}
+#comment-form .field label {
+  display : block;
+  text-transform : uppercase;
+  font-weight : normal;
+  font-size : 0.8em;
+  letter-spacing : 0.5px;
+}
+#comment-form .field input,
+#comment-form .field textarea {
+  font-size : 1em;
+  font-family : inherit;
+  border : 1px solid #bbb;
+  border-right : 1px solid #ddd;
+  border-bottom : 1px solid #ddd;
+  -moz-border-radius : 3px;
+  -webkit-border-radius : 3px;
+  padding : 5px;
+  background : #efefef;
+}
+#pr {
+  margin-top : 60px;
+  margin-bottom : 60px;
+}
+.buttons input {
+  font-size : 0.85em;
+  font-family : inherit;
+  background : #c31a0e;
+  color : #fff;
+  border : none;
+  -moz-border-radius : 3px;
+  -webkit-border-radius : 3px;
+  text-transform : uppercase;
+  padding : 5px 10px;
+  cursor : pointer;
+}
+#sidebar {
+  clear : both;
+  margin : 0 auto;
+  padding : 0;
+  border-top : 3px solid;
+}
+#sidebar a {
+  border-bottom : 1px dotted #ddd;
+}
+#sidebar #blognav, #sidebar #blogextra {
+  float : left;
+  border-top : 3px double;
+  margin : 0;
+  padding : 60px 0 0 0;
+}
+#blognav div,
+#blogextra div {
+  margin : 0 10px 50px 0;
+}
+#sidebar div div div {margin:0;}
+#sidebar h2 {
+  font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+  font-size : 0.9em;
+  text-transform : uppercase;
+  font-weight : bold;
+  letter-spacing : 1px;
+  color : #000;
+}
+#sidebar h3, #sidebar h4 {
+  font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+  font-weight : 300;
+  font-size : 1.2em;
+}
+#sidebar ul {padding:0;margin-right:0;}
+#sidebar ul li ul {
+  margin-bottom : 0/*1em*/;
+}
+#search fieldset {
+  margin : 0;
+  padding : 0;
+  border : none;
+}
+#search fieldset p {
+  margin : 0;
+  padding : 0;
+}
+#search fieldset p input#q {
+  width : 50%;
+}
+#search fieldset p input.submit {
+  margin : 0 0 0 5px;
+  cursor : pointer;
+}
+#sidebar .categories li.category-current a {
+	font-weight: bold;
+}
+#sidebar .categories li.category-current li a {
+	font-weight: normal;
+}
+#sidebar img {max-width:100%;}
+#sidebar .tags ul li, .tags li {
+  display : inline;
+}
+#sidebar .tags ul li a {
+  border : none;
+}
+#sidebar .tags strong a {
+  text-transform : uppercase;
+  font-size : 0.8em;
+  font-weight : bold;
+  letter-spacing : 1px;
+  font-style : italic;
+}
+.tag0 {font-size : 75%;}
+.tag10 {font-size : 80%;}
+.tag20 {font-size : 90%;}
+.tag30 {font-size : 100%;}
+.tag40 {font-size : 110%;}
+.tag50 {font-size : 120%;}
+.tag60 {font-size : 140%;}
+.tag70 {font-size : 150%;}
+.tag80 {font-size : 160%;}
+.tag90 {font-size : 170%;}
+.tag100 {font-size : 180%;}
+
+.dc-post .post {
+  border-bottom : 4px solid;
+}
+.dc-archive-month .day-date {
+  font-size : 1em;
+  margin-top : 30px;
+  padding-bottom : 10px;
+  border-bottom : 2px solid;
+  font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+  text-transform : uppercase;
+  font-size : 0.85em;
+  font-weight : bold;
+  letter-spacing : 1px;
+}
+.dc-archive-month .post-title {
+  font-size : 1.75em;
+  margin-bottom : 7px;
+}
+.dc-archive-month .post-info {
+  margin : 0 0 15px 0;
+  padding : 0 0 15px 0;
+  background : none;
+  border-bottom : 1px dashed;
+}
+.dc-category #content-info p img {
+  max-width:100%;
+}
+#subcategories {
+	margin: 1em 0;
+	padding: 0.5em;
+}
+#subcategories h3 {
+	margin: 0;
+}
+#subcategories ul {
+	margin: 0.5em 0 0 0;
+	padding: 0 0 0 20px;
+	line-height: 1.4;
+}
+#footer {
+  width : 100%;
+  margin : 0;
+  padding : 30px 0;
+  font-size : 0.9em;
+  background : #000;
+  float : left;
+  clear : both;
+  border-top : 1px solid #242424;
+  color : #fff;
+}
+#footer p {
+  margin : 0 auto;
+  padding : 0;
+  text-align:center;
+}
+
+.calendar table, .eventhandler-calendar table {
+	font-size: 9px;
+	text-align: center;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.calendar table caption, .eventhandler-calendar table caption {
+	margin: 0 auto;
+	padding: 4px 0 4px 5px;
+}
+
+.calendar table th, .eventhandler-calendar table th {
+	color: #333333;
+	background: transparent;
+	border: none !important;
+	font-weight:normal;
+	padding:4px 2px;
+}
+
+.calendar table tr, .eventhandler-calendar table tr {
+	border: none !important;
+}
+
+.calendar table td, .eventhandler-calendar table td {
+	border: 0.1em solid #EEE;
+	padding:4px 2px;
+	text-align: center;
+}
+
+.calendar table td a, .eventhandler-calendar table td a {
+	display: block;
+	background: #F7DFE6;
+	color: #0273b9;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.calendar table td a:hover, .eventhandler-calendar table td a:hover {
+	background: #0273b9;
+	color: #F7DFE6;
+}
+/* ajout mirovinben */
+/* surcharges pour mediaqueries
+- surcharge permettant de centrer le contenu dans la largeur de l'écran
+- suppression du liseré au dessus du footer
+- les images dont la largeur est supérieure à celle du billet sont réduites de façon à ne pas déborder à droite
+
+(max-width: 760px)
+	la largeur du billet reste à 480px
+	le bloc post-info-co n'est plus en dehors du corps du billet
+(max-width: 580px) and (min-width: 481px)
+	la largeur du billet diminue (400px) pour ne pas déborder d'un écran large de 480px
+(max-width: 480px)
+	la largeur du billet diminue (280px) pour ne pas déborder d'un écran large de 320px
+	dans #sidebar, le bloc #blogextra est placé sous le bloc #blognav
+(max-width: 360px)
+	les pictos "date" et "tags" disparaissent
+	les n° de commentaires ne sont plus en dehors du billet
+*/
+
+body,
+#page,
+#wrapper{
+	float: none;
+	margin: 0 auto;
+}
+
+#wrapper{
+	border-bottom: none;
+}
+
+.post img{
+    max-width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 760px)
+{
+	#top,
+	#wrapper,
+	#footer p{
+		width : 480px;
+	}
+	#main,
+	#content,
+	#sidebar{
+		width: 100%;
+	}
+	#footer p{
+		text-align: justify;
+	}
+	.post-info-co{
+		margin-left : 0;
+		text-align: left;
+		display:none !important;
+	}
+	#sidebar #blognav, #sidebar #blogextra{
+		width : 50%;
+	}
+}
+
+@media only screen and (max-width: 580px) and (min-width: 481px)
+{
+	#top,
+	#wrapper,
+	#footer p{
+		width : 400px;
+	}
+	.post img{
+		max-width: 400px;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	#top,
+	#wrapper,
+	#footer p{
+		width : 280px;
+	}
+	.post img{
+		max-width: 280px;
+	}
+	#comment-form .field textarea {
+		width : 270px;
+	}
+	#sidebar #blognav, #sidebar #blogextra{
+		width : 100%;
+	}
+}
+
+@media only screen and (max-width: 360px)
+{
+	.post .post-info,
+	.post .post-tags{
+		background-image: none;
+	}
+	#comments dt{
+		margin-left: 2em;
+	}
+}
+
+/* fin mediaqueries */

@@ -1,0 +1,60 @@
+/**
+ * @brief time-flies, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author David Yim
+ *
+ * @contributeur Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-sa/2.0/fr/
+ */
+/* SimpleMenu */
+#supranav {
+	border-top: 1px dotted #ccc;
+	font-size:0.7em;
+  height: 41px;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	padding: 0;
+	text-align:center;
+	text-transform: uppercase;
+}
+#supranav li {
+	border-right: 1px solid #ddd;
+	display: inline;
+	line-height:38px;
+	list-style-type: none;
+	margin-top: -15px;
+	padding:20px 0 5px;
+}
+* html #navsm li { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  text-decoration: none;
+}
+* html #navsm li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  margin-left: 4px;
+  text-decoration: none;
+}
+#supranav li a {
+	border-top: 5px solid #000;
+	color: #666666;
+	padding: 15px 20px 10px;
+}
+#supranav li a:first-letter{
+	font-size: 1.1em;
+}
+#supranav li.active {
+}
+#supranav li.active a {
+	font-weight: bold;
+}
+#supranav li:hover {
+  text-decoration: none;
+}
+#supranav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #7E858D;
+}

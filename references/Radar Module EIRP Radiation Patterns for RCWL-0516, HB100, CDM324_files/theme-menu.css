@@ -1,0 +1,156 @@
+/*!
+ * Theme Menu Css created by Shahid (Scientech)
+ */
+ 
+/*Menu Section--------------------------------------------------------------------------*/
+
+.navbar-inverse .navbar-toggle {
+    border-color: none;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+ /*  background-color: #66d1b9; */
+}
+.navbar-inverse {
+    border-color: none;
+    border-style: none;
+    border-width: 0px;
+    padding: 5px 0;
+	border-color: none;
+}
+.navbar-brand {
+	font-family: 'Roboto';
+	font-weight:400;
+    font-size: 40px;
+    height: auto;
+    line-height: 40px;
+	padding: 22.5px 15px 22.5px 0px;
+	margin-right: 50px;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.navbar > .container .navbar-brand {
+    margin-left: 0px;
+}
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 0;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	padding: 0;
+}
+.navbar {
+    border-radius: 0px;
+	margin-bottom: 0px;
+	min-height: 100px;
+}
+.navbar-wrapper {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-top: 0px;
+	z-index: 20;
+}
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+	color: #FFFFFF;
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+	color: #FFFFFF;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+	color: #FFFFFF;
+}
+.navbar .navbar-nav > li {
+    margin-right: 0px;
+    padding: 0 0 0px 0px;
+}
+.navbar .navbar-nav > li > a {
+    line-height: 20px;
+    padding: 40px 19px;
+	border-radius: 0px 0px 0px 0px;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-weight:400;
+	font-size: 16px;
+	
+}
+.nav {
+    /* position: relative; 
+    top: 20px;*/
+	margin-top: 0px;
+}
+.navbar-collapse {
+    max-height: 100%;
+}
+ 
+/*Dropdown Menus & Submenus Css----------------------------------------------------------*/
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+	min-width: 225px;
+	border-radius: 0px;
+	box-shadow: 0;
+	border: 0 none;
+	/* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7); */
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #fff;
+}
+.dropdown-menu > li > a {
+    color: #ffffff;
+    font-family: 'Roboto';
+	font-weight:400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px 20px;
+	transition: color 0.2s ease-in-out 0s;
+}
+.dropdown-menu > li > a:last-chlid {
+	border-bottom: 0px;
+	border-bottom: 0;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-submenu{
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu
+{
+    top:0;
+    left:100% !important;
+    margin-top:0px;
+    margin-left:0px;
+    -webkit-border-radius:0px 0px 0px 0px;
+    -moz-border-radius:0px 0px 0px 0px;
+    border-radius:0px 0px 0px 0px;
+}
+.dropdown-submenu:hover > .dropdown-menu{
+    display:block;
+}
+.dropdown-submenu .pull-left{
+    float:none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu{
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+}
+.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 15px 15px 15px 15px;
+}
+.navbar-right .dropdown-menu {
+    left: 0;
+    right: 0;
+}

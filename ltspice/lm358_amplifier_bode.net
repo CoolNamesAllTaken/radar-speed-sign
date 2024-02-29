@@ -1,0 +1,12 @@
+* C:\git-checkouts\radar-speed-sign\ltspice\lm358_amplifier_bode.asc
+XU1 N004 N002 3v3 0 N003 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+C1 N004 in 4.7µ
+R1 N003 N002 10k
+V1 in 0 AC 1
+C3 out N003 4.7µ
+R2 N002 N001 10k
+C4 N001 0 4.7µ
+.ac dec 1000 1 100k
+.lib UniversalOpAmp2.lib
+.backanno
+.end

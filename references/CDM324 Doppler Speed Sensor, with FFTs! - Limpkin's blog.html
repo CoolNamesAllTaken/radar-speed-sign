@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  
+		
+
+		
+  <title>CDM324 Doppler Speed Sensor, with FFTs! - Limpkin's blog</title>
+	<!-- head-title -->
+
+		
+			<meta name="copyright" content="">
+			
+				<meta name="ROBOTS" content="INDEX, FOLLOW">
+				<!-- meta-robots -->
+			
+  <meta name="description" lang="en" content="A very small form factor project, not only measuring an object&#39;s speed but also displaying it! With its UART interface, interfacing with Arduino platforms is dead simple too!">
+  <meta name="author" content="limpkin">
+  <meta name="date" content="2023-08-23T17:14:00+01:00">
+	<!-- meta-entry -->
+			<!-- head-meta -->
+
+		
+  <link rel="contents" href="https://www.limpkin.fr/index.php?archive" title="Archives">
+      <link rel="pingback" href="https://www.limpkin.fr/index.php?xmlrpc/default">
+        <link rel="next" href="https://www.limpkin.fr/index.php?post/2023/09/03/Repairing-a-pair-of-Audioengine-A5-speakers" title="Repairing a Pair of Audioengine A5 Speakers">
+  
+      <link rel="prev" href="https://www.limpkin.fr/index.php?post/2023/03/28/The-DC-Block-For-Low-Frequencies" title="A DC Block to Measure Low Frequencies">
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="https://www.limpkin.fr/index.php?feed/atom">
+	<!-- head-linkrel -->
+
+		<link rel="preload" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/style.css" as="style">
+<link rel="stylesheet" type="text/css" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index.php" media="print">
+  <link rel="preload" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(1).php" as="script">
+  <script src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(1).php"></script>
+<link rel="preload" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(2).php" as="script">
+<script src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(2).php"></script>
+
+
+<link rel="stylesheet" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(3).php" type="text/css" media="screen">
+<link rel="stylesheet" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(4).php" type="text/css" media="screen">
+<link rel="icon" type="image/x-icon" href="https://www.limpkin.fr/public/favicon.ico">
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" /><![endif]-->
+<meta name="google-site-verification" content="iUC0t-c8y2eyWBpfNr8hdVtjUKl4wGqE-7A1SakheDg">
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-13047627-1']);
+_gaq.push(['_trackPageview']);
+</script>
+<link rel="stylesheet" type="text/css" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(5).php">
+<link rel="stylesheet" type="text/css" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(6).php">
+<link rel="stylesheet" type="text/css" media="screen" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/simplemenu.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/760.css">
+
+	
+      <script type="application/json" id="dc_post_remember_str-data"></script>
+    <script src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(7).php"></script>
+  	<!-- html-head -->
+<script src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/ga.js.download" async="true"></script></head>
+
+
+  <body class="dc-post" cz-shortcut-listen="true">
+
+	
+		<div id="page">
+			
+				
+  <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21"
+  dc:identifier="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21"
+  dc:title="CDM324 Doppler Speed Sensor, with FFTs!"
+  trackback:ping="https://www.limpkin.fr/index.php?trackback/215" />
+</rdf:RDF>
+-->
+
+  
+					
+
+<div id="top" role="banner">
+  <h1><span><a href="https://www.limpkin.fr/index.php?">Limpkin's blog</a></span></h1>
+  <p id="blogDescription">An electronics geek blog, dedicated to sharing and open source. Check out my stores: <a href="https://lectronz.com/stores/stephanelec" hreflang="en" title="Lectronz store">EU</a> / <a href="https://www.tindie.com/stores/stephanelec" hreflang="en" title="tindie store">EU &amp; US</a>.<br></p>
+
+  </div>
+
+<p id="prelude" role="navigation"><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#main">To content</a> |
+<a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#blognav">To menu</a> |
+<a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#search">To search</a></p>
+				
+	<!-- page-top -->
+
+				<div id="wrapper">
+					
+						<div id="main" role="main">
+							
+								
+																	
+								<div id="content">
+									
+  <p id="navlinks">
+    <a href="https://www.limpkin.fr/index.php?post/2023/03/28/The-DC-Block-For-Low-Frequencies" title="A DC Block to Measure Low Frequencies" class="prev">« A DC Block to Measure Low Frequencies</a>
+     <span>-</span> <a href="https://www.limpkin.fr/index.php?post/2023/09/03/Repairing-a-pair-of-Audioengine-A5-speakers" title="Repairing a Pair of Audioengine A5 Speakers" class="next">Repairing a Pair of Audioengine A5 Speakers »</a>
+  </p>
+  <div id="p215" class="post" role="article">
+    <h2 class="post-title">CDM324 Doppler Speed Sensor, with FFTs!</h2>
+    <p class="post-info">By <a href="http://www.limpkin.fr/">limpkin</a>      on Wednesday, August 23 2023, 17:14              - <a href="https://www.limpkin.fr/index.php?category/My-Projects">My Projects</a>
+            - <a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21">Permalink</a>
+    </p>
+                  <ul class="post-tags">
+            <li><a href="https://www.limpkin.fr/index.php?tag/cdm324" rel="tag">cdm324</a></li>
+                      <li><a href="https://www.limpkin.fr/index.php?tag/doppler" rel="tag">doppler</a></li>
+                      <li><a href="https://www.limpkin.fr/index.php?tag/fft" rel="tag">fft</a></li>
+                      <li><a href="https://www.limpkin.fr/index.php?tag/stm32" rel="tag">stm32</a></li>
+              </ul>
+          
+    
+          <div class="post-excerpt"><p><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_and_exp.JPG" alt="" class="media-center">
+A very small form factor project, not only measuring an object's speed but also displaying it!<br>
+With its UART interface, interfacing with Arduino platforms is dead simple too!</p></div>
+        <div class="post-content"><h2>Introduction<br></h2>
+
+<p>If you follow this blog, you may have noticed that this is my third project using doppler sensors, and my second with the <strong>CDM324</strong>. This tiny sensor is just so neat for its price!<br><br>
+<img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/doppler-effect.png" alt="Doppler effect" class="media-center" title="Doppler effect, août 2013"><br>
+A quick refresher on the <strong>Doppler effect</strong>: when sending an RF tone at a given frequency towards a moving target, the <strong>reflected signal's frequency will be shifted</strong>. This is the reason why a fire truck's siren has a <strong>higher pitch</strong> when the truck is going towards you than when it is still.<br><br>
+<img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_zoom.jpg" alt="" class="media-center"><br>
+And what's nice with the CDM324 sensor above is that it actually <strong>outputs that frequency shift</strong>, so you "just" need to measure that frequency to compute the moving object's speed!<br></p>
+
+
+<h2>The project in action<br></h2>
+
+<p>Before I start getting into the technical details of this project, I figured you may want to see it in action:<br></p>
+
+<div class="external-media" style="margin: 1em auto; text-align: center;">
+<iframe width="700" height="400" src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/76kO2TxzD54.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+
+
+<h2>Why re-do this project? Why is it better now?<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_cool.JPG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_cool.JPG" alt="" class="media-center"></a><br>
+I learned quite a few things about electronics since I first made that amplification circuit for the CDM324 <strong>6 years ago</strong>.<br>
+Here are the main changes implemented in this new version:<br>
+- <strong>using an FFT to extract the measured speed</strong> from the CDM324 output<br>
+- using an <strong>automatic gain circuit</strong> to increase the detection range<br>
+- adding an <strong>onboard speed display</strong> for reading convenience<br>
+Computing the Fast Fourrier Transform (FFT) of a given signal esssentially <strong>extracts all its frequency contents</strong>.<br>
+It is therefore more reliable and sensitive than <a href="https://www.limpkin.fr/index.php?post/2017/02/22/Making-the-Electronics-for-a-24GHz-Doppler-Motion-Sensor">the simple comparator circuit</a> I had previously used, as you effectively <strong>look for a big peak in the FFT output</strong> and divide its X coordinate by a constant to get your detected object speed.<br>
+Sure, it required adding a microcontroller to first digitize that analog signal, but the <strong>detected speed can now directly be output through UART.</strong><br>
+The previous CDM324 amplification circuit had <strong>84dB</strong> of gain which <strong>in some cases was not enough</strong>. Instead of two fixed gain stages, I'm now using <strong>one fixed gain stage and a variable one</strong> for up to <strong>92dB</strong> of gain (or <strong>40000x</strong> voltage gain!). This second gain stage has <strong>automatic gain control</strong>, automatically varying the overall gain between <strong>72dB and 92dB</strong> to hopefully not saturate the overall amplification circuit output.<br>
+Finally, as it didn't really make sense for the previous project to require an extra micro-controller to compute the detected speed, this new CDM324 project <strong>includes a small display</strong> directly displaying the detected object speed to the user.<br></p>
+
+
+<h2>Digging into the Analog Circuit<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_analog.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_analog.png" alt="" class="media-center"></a><br>
+Starting from left to right, you'll first see the fixed gain stage of 130 (42.3dB) with a 7.2Hz high pass filter (C2 &amp; R1) and a 6.1kHz low pass filter (R3 &amp; C4). This allows progressively <strong>filtering out speeds not between 0.16km/h and 138km/h</strong>.<br>
+This particular op-amp was selected for its <strong>low input noise and high power-supply rejection ratio</strong>.<br>
+As it's only powered by 3v3, its positive input is set to a fixed voltage generated by the next amplification IC. This effectively allows us to bias (or center) the op-amp output to a voltage between its two power supply rails (0V and 3.3V).<br>
+The second amplification stage... <strong>is a microphone amplifier</strong>!<br>
+Thinking about it, it made perfect sense using an amplifier made for the exact same frequencies I was interested in, especially <strong>when it comes with automatic gain circuitry</strong>. It'll therefore automatically amplify less if your speeding object is close to the sensor, and amplify more if the the object is far away. Cherry on top of the cake, its output voltage is already centered around 1.23V so there's no need to re-bias it before feeding it to the microcontroller's Analog to Digital Converter (ADC).<br></p>
+
+
+<h2>What About the Digital Circuitry?<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_digital.PNG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_digital.PNG" alt="" class="media-center"></a><br>
+The digital circuitry is simply composed of an STM32F301 microcontroller and an I2C-controlled LCD segment driver.<br>
+The STM32F301 was selected for its <strong>small package, relatively low price and Cortex M4 core</strong> which can easily compute FFTs (more on that later).<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/exp_pinout.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/exp_pinout.png" alt="" class="media-center"></a><br>
+As there was still some board space available during the layout stage, I also <strong>broke out a full I2C and SPI bus</strong> to 2 expansion connectors... and that's <strong>on top of the existing UART bus</strong> for MCU flashing and the spare IOs/reset/boot signals!<br>
+I therefore fully hope to develop some expansion boards that would plug to that module.<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/tn_display.PNG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/tn_display.PNG" alt="" class="media-center"></a><br>
+A TN display was selected for its <strong>size and readability</strong>: it's of the same type that the ones used in multimeters.<br>
+Reading the measured speed in a bright environment therefore shouldn't be an issue! It's however quite tricky to drive as <strong>it requires some interesting waveforms</strong>, and while I had thought of letting the MCU directly drive it for a moment, the number of resistors required to do so made me go for the embedded controller you see in the above schematics. Interestingly, you'll find online <a href="http://awawa.hariko.com/avr_lcd_drive.html" hreflang="ja">some people who did manage to pull it off!</a><br>
+As a side note, I had originally gone for a 7 segments display, but the <strong>current transient when changing digits</strong> was so high that the introduced perturbation on the CDM324 5V rail <strong>would lead to glitches in its output</strong>:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_cur_transient_issue.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm324_cur_transient_issue.png" alt="" class="media-center"></a><br></p>
+
+
+<h2>Things Worth Mentioning<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/gui_demonstrator.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/gui_demonstrator.png" alt="" class="media-center"></a><br>
+I figured I'd make a dedicated paragraph to mention the things I really like about this little board.<br>
+<strong>No programmers are required to update the MCU</strong>: the STM32F301 comes with an embedded UART bootloader! By simply connecting a USB-UART adapter to the dedicated connector, tying the BOOT0 pin to 3V3 and then briefly bringing the RESET pin to ground, the STM32F301 will enter bootloader mode.<br>
+<strong>The overall circuit is very simple and expandable</strong>: there are only a handful of components and the two expansion connectors with I2C, SPI, UART and IOs will hopefully enable projects from electronics enthusiasts!<br></p>
+
+
+<h2>The PCB<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_pcb.JPG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_pcb.JPG" alt="" class="media-center"></a><br>
+The folks at <a href="https://www.pcbway.com/" hreflang="en">PCBWay.com</a> were kind enough to sponsor this project!<br>
+As usual, the quality was great, shipping was fast with DHL, PCB assembly was without any issue so the PCB worked right away... these days I always go with them.<br>
+I'm pretty sure this is the one of the most compact PCB I've ever laid out. It's only <strong>32 by 32.5mm</strong> and is made to be put behind the CDM324. A general rule when amplifying small signals is to have as short traces as possible!<br></p>
+
+
+<h2>Measuring the Transfer Function<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/Omicron_BODE-100.jpg" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/Omicron_BODE-100.jpg" alt="" class="media-center"></a><br>
+To make sure the amplification chain could sense the speeds  I was interested in, I needed to measure the circuit amplification across frequency.<br>
+To do so, I used my Bode100 but could definitely had manually done it using a signal generator and an oscilloscope (it just would have taken longer). Given the extremely high amplification present in the analog circuitry, I used <strong>many</strong> attenuators (for a <strong>total of 80dB</strong>!) at the Bode100 output to present a -100dBm signal at the amplification chain input (that's <strong>6.3uV peak peak</strong>).<br>
+Using a large averaging factor and a 10Hz measurement bandwidth, the following graph was gotten 10 hours later:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_s21.PNG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_s21.PNG" alt="" class="media-center"></a><br>
+Let's ignore for the moment the overall gain and focus on the <strong>-3dB corner frequencies</strong>, even though it's a bit ironic to do so when dealing with such a high circuit gain. While the measured low pass corner frequency was bang on (6.1kHz), the same couldn't be said of the high pass filter corner frequency. The reason was then found inside the microphone amplifier datasheet:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/max9814_gain.PNG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/max9814_gain.PNG" alt="" class="media-center"></a><br>
+Even though this is actually fine as a 100Hz frequency corresponds to a <strong>2.3km/h speed</strong>, I still took that opportunity to update my first amplification stage to the following:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/updated_first_stage.PNG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/updated_first_stage.PNG" alt="" class="media-center"></a><br>
+I then ran another frequency sweep (this time with 70dB of external attenuation) and got this:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/transf_func_cdm324_updated_filter.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/transf_func_cdm324_updated_filter.png" alt="" class="media-center"></a><br>
+... and if we zoom in between the -3dB corner frequencies:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/transf_func_cdm324_updated_filter_zoomed_in.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/transf_func_cdm324_updated_filter_zoomed_in.png" alt="" class="media-center"></a><br>
+Taking into account the 70dB of external attenuation, the overall amplification gain ended up being <strong>95.4dB</strong>, with 3dB corner frequencies of <strong>150Hz</strong> (3.4km/h) and <strong>~7.9kHz</strong> (180km/h).<br>
+Finally, here's a very interesting way to test the microphone amplifier automatic gain control feature: in the below measurement, I not only perform a frequency sweep <strong>but also a power sweep</strong>:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/power_sweep.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/power_sweep.png" alt="" class="media-center"></a><br>
+Given that I'm linearly sweeping between -90dBm and -60dBm between 1kHz and 1.3kHz, we can conclude that the AGC starts kicking at an input power of <strong>-89.9dBm</strong> and seems to stop intervening at <strong>-66.3dBm</strong>. This 23.6dB range is however a bit high as the datasheet mentions 20dB.</p>
+
+
+<h2>Checking for Oscillations<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/output_adc_noise_floor.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/output_adc_noise_floor.png" alt="" class="media-center"></a><br>
+An <strong>extremely common issue</strong> when having an amplification chain with such a massive gain is <strong>oscillations</strong>: without any signal present at your device input, when probing your output you'd typically see a rogue sine wave.<br>
+This happens when some of your output signal gets coupled into the device input (imagine putting a live microphone in front of speakers).<br>
+<em>But how does it get coupled?</em> you may then ask. <br>
+In my experience either through <strong>electromagnetic coupling</strong> (output PCB trace close to the input trace) or through <strong>power supplies</strong> (a current draw proportional to the output signal introduces a voltage drop on the first amplifier supply which then gets coupled into the input signal).<br>
+While one could typically use an oscilloscope to measure the amplification chain output signal to check for small oscillations, one would be limited by said oscilloscope <strong>input noise level</strong>. One way to get around that could be to use my <a href="https://www.limpkin.fr/index.php?post/2022/09/20/The-Low-Noise-Amplifier-Board">low noise amplifier board</a> but I instead went with my <strong>SA44B spectrum analyzer</strong> and got the following spectrum:<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/output_spectrum_with_backpack_50r_vs_sensor.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/output_spectrum_with_backpack_50r_vs_sensor.png" alt="" class="media-center"></a><br>
+The black trace is the output spectrum with a CDM324 connected and the blue trace is the output spectrum with a <strong>50 ohms resistor connected to the amplification chain input</strong>.<br>
+The blue curve being below the black curve <strong>means that my amplification chain noise floor is below the CDM324 output "noise"!</strong> This means the complete device is "limited" by the CDM324.... which is what I wanted to see.<br>
+Also worth mentioning is the relative <strong>lack of pronounced spikes</strong> that could be caused the AC grid frequency, TN display scanning or USB lines: remember that the above measurement was taken with a very sensitive spectrum analyzer while the cdm324 was standing still. What really matters is that the spectrum computed by the STM32 is flat when nothing is moving around.<br>
+If we "walk back" the amplification chain we can try to compute our amplification chain input noise rating: -80dB (noise level at 1kHz) + 21dB (500 / 50r resistor divider at the specan input) - 95.4dB (circuit amplification) = -154.4dB/sq(Hz) = <strong>4.26nV RMS/sq(Hz)</strong>.<br>
+Comparing that value to the theoretical one can be done using the following formula from <a href="https://www.renesas.com/kr/en/document/apn/r13an0010-noise-calculations-op-amp-circuits" hreflang="en" title="opamp noise calculations">that document</a> (from page 6):<br><br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/inv_opamp_noise_calc.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/inv_opamp_noise_calc.png" alt="" class="media-center"></a><br>
+Rather than doing these math however, one may notice that <strong>this 4.26nV/sq(Hz) measurement is already below the 4k7 input resistor johnson noise of 8.7nV/sq(Hz)</strong>... and I'm not even mentioning the LMP7731 input voltage noise (2.7nV/sq(Hz)) and LMP7731 input current noise (1.1pA/sq(Hz)) going to the 4k7//620k.<br>
+I wish I had an explanation for that difference... but I repeated that measurement several times, even used a signal generator and a table top multimeter to double check the circuit amplification (I actually measured more than 95.4dB)... but still couldn't find an explanation on that better than expected result. If you're reading this and have an idea, send me a message and <strong>I'll send you a device for free</strong>!<br></p>
+
+
+<h2>Mechanical Assembly<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_antenna.JPG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_antenna.JPG" alt="" class="media-center"></a><br>
+Similarly to my previous CDM324 project, I've designed and 3D printed a small support to hold everything together.<br>
+The overal assembly <strong>only measures 36x36.5x17.5mm</strong>. Tiny!<br></p>
+
+
+<h2>MCU Performance &amp; ADC Sampling Rate<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/stm_adc.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/stm_adc.png" alt="" class="media-center"></a><br>
+You may know that FFT computation is quite resource intensive.<br>
+In a "release' build configuration, by toggling a MCU pin I measured that <strong>2.4ms</strong> was needed to:<br>
+- convert 1024 ADC samples to floats<br>
+- compute a 1024 points FFT<br>
+- compute the magnitude of the FFT output vector elements<br>
+This effectively translates to a maximum of 417 FFTs per second, which is more than enough for our purposes!<br>
+I therefore selected an ADC sampling rate of <strong>35.7ks/s</strong>, meaning that for a 1024 samples buffer I should theoretically be able to measure frequencies between 34.9Hz and 17.8KHz (or a <strong>minimum of 0.8km/h</strong>). That also meant an FFT frequency bin width of <strong>0.8km/h (0.5mph)</strong>.<br>
+By using double buffering (one buffer filling with data while another is getting processed), 34.9 FFTs per second can be computed. If we want to stream raw ADC values and FFT data through UART, a minimum bit rate of 34.9*(1024*uint16 + 512*float32)*10/8 = <strong>1428kb/s</strong> is required. But because of baud rate incompatibilities between the MCU &amp; possible USB to UART adapters, that actually means a 2Mbit/s minimum baud rate.<br>
+However, it turned out that many USB to UART adapters <strong>couldn't handle a continuous 2Mbit/s stream</strong>.<br>
+In the scripts located at the end of this page, you'll therefore notice that I actually use <strong>1Mbit/s</strong>, and am only sending the "interesting"  part of the FFT data.<br>
+One last thing to mention: I did find that the required impedance between signal source and ADC input needed to be small, as otherwise what seems to be a current bias would be introduced during the sampling phase.... odd.<br></p>
+
+
+<h2>On the topic of Hardware Abstraction Layers<br></h2>
+
+<p>When it comes to Hardware Abstraction Layers (HALs) everyone has his/her own opinions.<br>
+I personally tried several of them (for different platforms and IDEs) and until now have been quite against using them as it'd always take me as much time learning the HAL as I'd spend reading the datasheet.<br>
+With the STM32 environment, things are quite different: you actually get a nice graphical user interface (STM32CubeMX, also embedded in the STM32CubeIDE) that allows you to fully configure your microcontroller and its internal peripherals (think Clocks, SPIs, UARTs, Timers, Interrupts, DMA transfers...). Once you save your .ioc file, the IDE will automatically generate the HAL initialization code and interrupt routines in 3 files (main.c, stm32f3xx_hal_msp.c, stm32f3xx_it.c) and you'll be more or less good to go.<br>
+Why more or less? Well in the case of configured timers, it'll still be up to you to call the actual HAL start routines depending on your use case (HAL_TIM_Base_Start, HAL_TIM_Base_Start_IT, HAL_TIM_Base_Start_DMA...). Luckily, given the STM32 platform is used all over the globe, the time between realizing something doesn't work and the time you find a solution online will be less than a few minutes. Getting something up and running is therefore extremely quick.<br>
+However... there are times where the code generation tool messes with your complete software solution. It happened to me once that when changing an SPI baud rate in STM32CubeMX and saving the changes my platform wouldn't boot anymore. After comparing my main.c with a previous version (don't forget to use code versioning!) I discovered that the generated code initializing the external crystal driver had simply disappeared!<br>
+Moreover, while relying on this code generation tool is great when wanting to rapidly tweak a few settings... it actually prevents you from compartimentalizing your code in different files. Even though I managed to do so, identifying all the functions and global variables that are required for a given feature rapidly gets annoying (think interrupt routines for peripherals and DMA transfers, end of transfer HAL callbacks, HAL descriptor objects...).<br>
+You also obviously get a performance hit as the HAL performs a few checks before letting you do what you'd like to. For a simple 24bits SPI TX transfer I actually measured a performance penalty factor of 9 between using the HAL and directly writing the registers myself. STM however does also provide a Low Layer API (LL), with "better optimization but less portability, requiring deep knowledge of the MCU and peripheral specifications."... but at this point you may as well go bare-metal :).<br></p>
+
+
+<h2>Writing a Debug GUI<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/debug_tool.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/debug_tool.png" alt="" class="media-center"></a><br>
+Can you guess the cars passing me by and the ones stopping next to me?<br>
+As previously mentioned, the onboard MCU can use its UART peripheral to output data to the outside world.<br>
+For debugging purposes (and nice demo effect), I therefore wrote a python GUI that leverages the Enthought Chaco framework (itself <strong>based on qt4</strong>) to display live data on your computer screen.<br>
+Depending on your computer configuration, it can (surprisingly) handle a 1600*1200 pixels window at a refresh rate of 34 frames per second to show <strong>raw ADC samples, computed FFT data and detected peaks over time</strong>.<br></p>
+
+
+<h2>So sensitive that it can debug your computer<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/disappearing_noise.jpg" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/disappearing_noise.jpg" alt="" class="media-center"></a><br>
+Remember when I mentioned that I switched from a 7 segment display to a TN display because of voltage transients?<br>
+In the picture above you can see the output spectrogram when no movement is happening in front of the sensor. At that moment, the AGC is not kicking in and <strong>the gain is at its maximum</strong> (94dB). That means the board amplifies.... <strong>everything</strong>, and that includes potential noise present on your USB power supply!<br>
+So what happened at the end of that green arrow? I'm pretty sure it has something to do with either my trackpad or power saving features as this transition <strong>only happens when not touching my laptop for 30 seconds</strong>. I'm assuming the noise is picked up through the USB +5V power line, but it could also also be picked up through RF.... fun, right?<br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/usb_isolator.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/usb_isolator.png" alt="" class="media-center"></a><br>
+A way to improve things is to use a <strong>USB isolator</strong> as the one pictured above though!<br></p>
+
+
+<h2>Making a Companion Board<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_exp.JPG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_exp.JPG" alt="" class="media-center"></a><br>
+As it seems I was particularly motivated by this project, I then took some additional time to make a breakout board.<br>
+It offers the following features:<br>
+- a <strong>USB to UART converter</strong>, connected to the RESET &amp; BOOT0 lines<br>
+- a <strong>jack connector</strong> so you can listen to the doppler noise<br>
+- a switch to toggle between MPH and KM/H display<br>
+- a <strong>uSD card connector</strong> to log speeds<br>
+That 1.6mm PCB with its two 8pins connectors means that it's firmly attached to the CDM324 module!<br>
+Something great that is now enabled is <strong>one click firmware updates</strong> using the RTS &amp; DTS lines of the USB-UART converter and the <a href="https://pypi.org/project/stm32loader/" hreflang="en" title="stm32loader">stm32loader project</a>... how awesome is that? All you need to type is:<br>
+<a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/stm32loader.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/stm32loader.png" alt="" class="media-center"></a><br></p>
+
+
+<h2>Tying it all together: making a Control GUI<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_tool.png" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_tool.png" alt="" class="media-center"></a><br>
+Rather than having a collection of scripts, I decided to make a single python tool that:<br>
+- automatically fetches and displays the detected object's speed<br>
+- launches the speed debug tool I previously mentioned<br>
+- allows you to <strong>flash the device</strong><br>
+This is just the beginning, pull requests are strongly welcome!<br></p>
+
+
+<h2>Project source files<br></h2>
+
+<p><a href="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_and_exp.JPG" class="colorbox_zoom cboxElement" rel="colorbox-1"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/cdm_and_exp.JPG" alt="" class="media-center"></a><br>
+As with all my other projects, you'll find all source files made for this project <a href="https://github.com/limpkin/cdm324_fft" hreflang="en" title="cdm324 project sources">here</a>!<br>
+Want to buy the complete assembled device? Have a look at my <a href="https://www.tindie.com/products/stephanelec/cdm324-doppler-speed-sensor/" hreflang="en" title="US shop">US shop</a> or <a href="https://lectronz.com/products/cdm324-doppler-speed-sensor" hreflang="en" title="CDM324 shop for EU">EU shop</a>!<br>
+Want to interface that sensor to an Arduino? Have a look at the <a href="https://github.com/limpkin/cdm324_fft" hreflang="en" title="cdm324 project sources">getting started instructions.</a><br>
+Thanks a lot for reading!</p></div>
+
+      </div>
+
+  
+
+                    <div id="comments">
+          <h3>Comments</h3>
+          <dl>
+            <dt id="c713" class=" odd first"><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c713" class="comment-number">1.</a>
+        On Friday, August 25 2023, 17:30        by SROBINSON</dt>
+      <dd class=" odd first">
+
+                <p>This looks amazing. Are the parts available for purchase and shipping to the US?</p>
+              </dd>
+                      <dt id="c781" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c781" class="comment-number">2.</a>
+        On Tuesday, August 29 2023, 16:07        by <a href="http://limpkin.fr/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class="  ">
+
+                <p>@SROBINSON: of course: <a href="https://www.tindie.com/products/stephanelec/cdm324-doppler-speed-sensor/" title="https://www.tindie.com/products/stephanelec/cdm324-doppler-speed-sensor/" rel="ugc nofollow">https://www.tindie.com/products/ste...</a></p>
+              </dd>
+                      <dt id="c879" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c879" class="comment-number">3.</a>
+        On Friday, September  1 2023, 15:20        by Bob</dt>
+      <dd class=" odd ">
+
+                <p>The article does not give the range being detected, as far as I can see.</p>
+
+
+<p>How accurate is the data from different distances?</p>
+              </dd>
+                      <dt id="c953" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c953" class="comment-number">4.</a>
+        On Sunday, September  3 2023, 10:09        by <a href="http://limpkin/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class="  ">
+
+                <p>@Bob: The range is highly dependent on the moving object's material, so I can't provide you with a clear cut answer I'm afraid. For a car it can be 40 meters for example. The data will always be accurate as the doppler effect doesn't depend on distance</p>
+              </dd>
+                      <dt id="c977" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c977" class="comment-number">5.</a>
+        On Monday, September  4 2023, 13:01        by Bj</dt>
+      <dd class=" odd ">
+
+                <p>Hi, I was wondering if this could be used to measure the speed of a softball/baseball? My daughter is a softball pitcher and it would be interesting the measure the speed of her pitches from the position of the catcher. There are commercial products but the are expensive <a href="https://www.pocketradar.com/products/ball-coach-radar" title="https://www.pocketradar.com/products/ball-coach-radar" rel="ugc nofollow">https://www.pocketradar.com/product...</a> Also could this be adapted to drive a large display like tjis<a href="https://www.aliexpress.com/item/3256802889365599.html" title="https://www.aliexpress.com/item/3256802889365599.html" rel="ugc nofollow">https://www.aliexpress.com/item/325...</a> to be seen from further away?</p>
+              </dd>
+                      <dt id="c1075" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1075" class="comment-number">6.</a>
+        On Tuesday, September  5 2023, 09:42        by <a href="http://limpkin.fr/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class="  ">
+
+                <p>@Bj: placed close enough, the sensor could absolutely measure that speed... and you could use one of the spare bus on the connectors to interface with a (custom) display of some sort yes.</p>
+              </dd>
+                      <dt id="c1668" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1668" class="comment-number">7.</a>
+        On Saturday, September 23 2023, 20:28        by vagyver</dt>
+      <dd class=" odd ">
+
+                <p>Hello! Excellent job and explaination too!</p>
+
+
+<p>I would like to use it to measure the speed of tennis ball.<br>
+Would it be capable? If yes, how close enough have to place it?</p>
+
+
+<p>Will be any benefit at high speed balls if i increase low pass filter from  7.9kHz  to 9-10 khz but at the same time make higher the high pass from 72 Hz  to 200-250 hz ? (i don't care about low speed balls).</p>
+              </dd>
+                      <dt id="c1742" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1742" class="comment-number">8.</a>
+        On Wednesday, September 27 2023, 12:41        by PeterF</dt>
+      <dd class="  ">
+
+                <p>Hi Mathieu,<br>
+Many thanks for designing and producing this CDM324 project.  I purchased a complete kit from your online Tindie store (CDM324 sensor display module, expander board and USB isolator.  The kit arrived within 8 days from China and worked first time on assembly and powering up.</p>
+
+
+<p>I was very pleased to see that the ST32F301 had already been programmed with the CDM324 software - many thanks, this has saved me hours, since I'm not a Windows 10 user and normally use Linux and Chromebooks.</p>
+
+
+<p>I haven't had a chance to 'borrow' a Windows machine to try out the GUI debug software, but have used a Python script to manually read the mph and km data over the serial port by issuing 'm' and 'k' command characters respectively, to retrieve the latest speed values .</p>
+
+
+<p>I did notice that by issuing 'a' there is a continuous stream of data output that varies if I wave my hand in front of the radar sensor.  I could not find the command to switch back to 'normal' mode.  Is this mode normally controlled by the GUI debug software.</p>
+
+
+<p>I couldn't find any information about SD card operation, is this already programmed into the STF301?  I was just a bit worried about turning the power on and off to the back pack if an SD card was present.</p>
+
+
+<p>Thank you once again for all the time and effort you have put into this project, it is much appreciated and has helped me greatly progress with the building of a vehicle speed monitor for the local community.</p>
+
+
+<p>Kind Regards,<br>
+Peter</p>
+              </dd>
+                      <dt id="c1790" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1790" class="comment-number">9.</a>
+        On Wednesday, September 27 2023, 21:19        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@vagyver: thanks a lot! that's a tough one... would say fairly close (&lt;30cm) as the ball is not metallic. I think you could only modify the low pass filter without touching the high pass one <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+
+
+<p>@Peterf: thanks for the kind words, they mean a lot! It seems you have a good overview of the ecosystem :). The counterpart of 'a' is 's'.<br>
+About SD card: nothing is programmed at the moment, but the low level routines are there: <a href="https://github.com/limpkin/cdm324_fft/blob/main/fw/Core/Src/user/expander_board.c#L76" title="https://github.com/limpkin/cdm324_fft/blob/main/fw/Core/Src/user/expander_board.c#L76" rel="ugc nofollow">https://github.com/limpkin/cdm324_f...</a><br>
+You may need to format the card with a 512 block size. Send me a quick email at (mydomainname)@(mydomainname).fr for faster communication <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+                      <dt id="c1807" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1807" class="comment-number">10.</a>
+        On Friday, September 29 2023, 09:47        by Will</dt>
+      <dd class="  ">
+
+                <p>Hi,</p>
+
+
+<p>I've just received my board and it works amazingly! I'm hoping to tie this into another arduino board to run as a speed sign.</p>
+
+
+<p>Is there a way to get it to only show the speed of things coming towards the sensor, rather than away from it?</p>
+
+
+<p>thanks</p>
+              </dd>
+                      <dt id="c1812" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c1812" class="comment-number">11.</a>
+        On Friday, September 29 2023, 13:28        by <a href="http://limpkin.fr/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class=" odd ">
+
+                <p>@Will:</p>
+
+
+<p>Thanks a lot for the kind words!<br>
+At the moment I haven't coded this functionality yet, but in theory it shouldn't be that complex as we would need to store the "FFT energy" and check if it increases or decreases over time to know if the object is moving toward / away from the device <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+                      <dt id="c2390" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2390" class="comment-number">12.</a>
+        On Wednesday, October 25 2023, 05:29        by Shawn</dt>
+      <dd class="  ">
+
+                <p>Awesome work with this. I am starting to look into doppler radar for a particular project and stumbled across your older board for the HB100. Imagine my surprise finding this project!</p>
+
+
+<p>I am nowhere near your level of understanding of the programing for this project let alone the circuitry, but have found a need in my neck of the woods for a reasonably priced speed detector.</p>
+
+<pre></pre>
+
+<p>I am wondering two things:</p>
+
+
+<p>Could this be calibrated to display feet per second(seems this would be the easy one),</p>
+
+
+<p>And could the circuit be optimized to detect between say, 200fps and 350fps(219kph-329kph)?<br>
+I've read through the amplification circuit section but don't have the background knowledge to take a stab at answering this one.</p>
+
+
+<p>Thank you!</p>
+              </dd>
+                      <dt id="c2391" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2391" class="comment-number">13.</a>
+        On Thursday, October 26 2023, 18:14        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@Shawn: thanks a lot! changing to feet per second is an easy one indeed. modifying the circuit for 329kph seems to be just on the border of what is possible (due to the max BW of the MAX9814). I however don't know how well the sensor itself would work <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+                      <dt id="c2457" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2457" class="comment-number">14.</a>
+        On Friday, October 27 2023, 14:57        by vagyver</dt>
+      <dd class="  ">
+
+                <p>Hello again!<br>
+I just received it and i can't wait to use it outdoorly!</p>
+
+
+<p>But i have 2 questions:</p>
+
+
+<p>a) I used the gnd and the 'TX" pins and drive a usb-to-uart ft232rl adapter set at 115200 so that i can have the output  value but i got nothing.<br>
+Do i have to do something else, since i am not using your usb board?</p>
+
+
+<p>b) Since i couldn't find schematics, does the circuit have a voltage regulator? If yes, we could supply it with more than 5V. and then please, how high voltage? If not, then we have to supply with exact 5V (i am afraid since cdm324 is 5V, you might haven't used any).<br>
+I am asking because now i am using a lM317 and i want to get rid of it.</p>
+
+
+<p>Mamy bravo your the build quality and the very very careful design!</p>
+              </dd>
+                      <dt id="c2472" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2472" class="comment-number">15.</a>
+        On Friday, October 27 2023, 18:29        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@vagyer:<br>
+1) it should work right away, you may try to power cycle the sensor to see an hello message output by the sensor<br>
+2) schematics can be found at <a href="https://github.com/limpkin/cdm324_fft/tree/main/kicad/cdm324_v2" title="https://github.com/limpkin/cdm324_fft/tree/main/kicad/cdm324_v2" rel="ugc nofollow">https://github.com/limpkin/cdm324_f...</a> . The circuit does have a voltage regulator, you need 5V exactly.<br>
+thanks for the kind words!</p>
+              </dd>
+                      <dt id="c2479" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2479" class="comment-number">16.</a>
+        On Saturday, October 28 2023, 10:37        by vagyver</dt>
+      <dd class="  ">
+
+                <p>Unfortunately, what i only get is a welcome mesaage.<br>
+This:<br>
+CDM324 fw v0.1, compiled Aug 15 2023 23:41:17</p>
+
+
+<p>And this happens when i set the baud rate at 10001000 (and not at 115200 as expected).</p>
+
+
+<p>And then nothing at the serial port. At the same time, i see values on the lcd.</p>
+
+
+<p>The question:</p>
+
+<pre>Any suggestions?</pre>
+
+<p>Could it be in bootloader mode?<br>
+Have i to make a pin high or low to get values?<br>
+Have you even test it without youe serial board like i try to do?</p>
+              </dd>
+                      <dt id="c2480" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2480" class="comment-number">17.</a>
+        On Saturday, October 28 2023, 11:13        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@vagyver: 115200 is NOT expected, I invite you to have a quick glance at getting started instruction in the readme : <a href="https://github.com/limpkin/cdm324_fft" title="https://github.com/limpkin/cdm324_fft" rel="ugc nofollow">https://github.com/limpkin/cdm324_f...</a></p>
+              </dd>
+                      <dt id="c2494" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2494" class="comment-number">18.</a>
+        On Monday, October 30 2023, 15:40        by vagyver</dt>
+      <dd class="  ">
+
+                <p>Well, i have to adnit that all information was there!<br>
+I found everything and the board is working! As your documentation says!</p>
+
+
+<p>BUT, what i am investgating now is that i get multi values at the serial compared to the lcd.<br>
+If i send the 'm' and the lcd displays 0.8, i get 8 and the serial. If the lcd 2.3, the uart says 23.<br>
+When i send 'k' i get even more larger values at the serial.</p>
+
+
+<p>I am still investigating why....</p>
+              </dd>
+                      <dt id="c2505" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2505" class="comment-number">19.</a>
+        On Monday, October 30 2023, 17:33        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@vagyer: simply divide by 10 the value returned by the serial link :). 'm' is for mph, 'k' is for kph</p>
+              </dd>
+                      <dt id="c2529" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2529" class="comment-number">20.</a>
+        On Sunday, November  5 2023, 19:05        by bill</dt>
+      <dd class="  ">
+
+                <p>Does the current code support setting of the angle of the sensor to the direction of the object being measured (eg if you are measuring vehicle speed but the sensor has to be angled to the road so that the sensor can be placed off the road)?</p>
+
+
+<p>Does it also support showing the maximum speed for each 'object' between each idle phase, rather than the live speed? To explain more: In the example video of the trains, the display shows the live, varying speed of each train, so it would be difficult for someone watching the display to work out what the maximum speed for each train was. In the scenario I'm thinking of (measuring the maximum speeds of cars on a road) it would be great if the display would just show the maximum speed so far between each idle phase, rather than it varying continually.<br>
+Thanks!</p>
+              </dd>
+                      <dt id="c2591" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2591" class="comment-number">21.</a>
+        On Monday, November  6 2023, 11:25        by <a href="http://limpkin.fr/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class=" odd ">
+
+                <p>@bill: for the angle attack, here are the lines you'd need to modify with an additional multiplication: <a href="https://github.com/limpkin/cdm324_fft/blob/main/fw/Core/Src/user/main.c#L93" title="https://github.com/limpkin/cdm324_fft/blob/main/fw/Core/Src/user/main.c#L93" rel="ugc nofollow">https://github.com/limpkin/cdm324_f...</a><br>
+Modifying the code to "freeze" the maximum speed is fairly straight forward to! I might actually have some time to do it <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+                      <dt id="c2635" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2635" class="comment-number">22.</a>
+        On Tuesday, November  7 2023, 10:06        by bill</dt>
+      <dd class="  ">
+
+                <p>Thanks for the pointer to the code!</p>
+              </dd>
+                      <dt id="c2662" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2662" class="comment-number">23.</a>
+        On Tuesday, November  7 2023, 17:09        by vagyver</dt>
+      <dd class=" odd ">
+
+                <p>Well, i have to say i got very positively suprized by its accuracy up to 80 km/h which i tested it with my car!<br>
+I got usually up to 2 km/h differnce with the car's odometer! Amazing! (and if cars display 1-2 kmh more than real, then no difference!)</p>
+
+
+<p>Amazing!</p>
+
+
+<p>My notes are that for those who didn't buy the uart board (like me), i had to find that i have to ground the km/miles pin so that i can see km instead of miles and divide via 10 the usart reading. Quite some lost time!<br>
+But i did make a nice code keeping the maximum speed for 6 seconds and i got really fun using it! So happy !</p>
+
+
+<p>So, please consider at your next update  maybe add/modify any of these.</p>
+
+
+<p>Finally, can you recommend any modifications (maybe at the opamp gain or the filter's freqs) so that i measure my tennis serve speed?<br>
+Have you any experience with small objects?</p>
+
+
+
+<p>Thank in advance!</p>
+              </dd>
+                      <dt id="c2756" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2756" class="comment-number">24.</a>
+        On Wednesday, November  8 2023, 20:08        by limpkin</dt>
+      <dd class="  ">
+
+                <p>@vagyer: thanks for the kind words! I've updated the readme to mention the tying to ground trick :).<br>
+Unless you serve at more than 200km/h I don't think you need to make any modification.... however if you see that the speed is not picked up, maybe we could modify the high pass filter to filter speeds below 50km/h. to be honest I'm not sure if how sensitive the radar will be</p>
+              </dd>
+                      <dt id="c2812" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2812" class="comment-number">25.</a>
+        On Sunday, December  3 2023, 15:00        by Dave</dt>
+      <dd class=" odd ">
+
+                <p>Hey, I also purchased the kit from your Tindie store and am eager to get my project to monitor the average speeds of the road outside our house off the ground. I was just wondering if you have any recommendations about waterproofing and/or enclosures. From my understanding plastic and glass should be transparent at these frequencies so I was thinking of just using a normal plastic project box and sealing it all up with silicone before installing it outside. I'll probably use PoE to get power and data to/from the box but will just seal that exit point as well.</p>
+              </dd>
+                      <dt id="c2877" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2877" class="comment-number">26.</a>
+        On Tuesday, December  5 2023, 13:02        by limpkin</dt>
+      <dd class="  ">
+
+                <p>@Dave: plastic or glass boxes will indeed work! Your plan sounds like a good one.</p>
+              </dd>
+                      <dt id="c2939" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c2939" class="comment-number">27.</a>
+        On Thursday, December  7 2023, 09:04        by <a href="http://nodeledge.se/" rel="ugc nofollow">Johan</a></dt>
+      <dd class=" odd ">
+
+                <p>Hi<br>
+I recently bought 3 devices for testing with my MCU MKR1310, just a quick question is it possible to have the  sensor inside a box to weatherproof the sensor or would it not work well inside a box?</p>
+              </dd>
+                      <dt id="c3070" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c3070" class="comment-number">28.</a>
+        On Sunday, December 10 2023, 08:40        by limpkin</dt>
+      <dd class="  ">
+
+                <p>@Johan: it'll work well inside a box <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+                      <dt id="c16216" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c16216" class="comment-number">29.</a>
+        On Tuesday, February 20 2024, 17:19        by Craig</dt>
+      <dd class=" odd ">
+
+                <p>Could this device be used with a Raspberry Pi, instead of an Arduino?</p>
+              </dd>
+                      <dt id="c16218" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c16218" class="comment-number">30.</a>
+        On Tuesday, February 20 2024, 19:19        by mike</dt>
+      <dd class="  ">
+
+                <p>Is it possible to just steer the device without the extender board true a ESP32 ? which gives a solid 3.3v from the board.<br>
+And it would be possible then to steer a 7 segment led strip board?</p>
+
+
+<p>Gruss aus Zuri</p>
+              </dd>
+                      <dt id="c16251" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c16251" class="comment-number">31.</a>
+        On Wednesday, February 21 2024, 15:33        by <a href="http://limpkin.fr/" rel="ugc nofollow">limpkin</a></dt>
+      <dd class=" odd ">
+
+                <p>@Craig: yes of course <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"><br>
+@mike: definitely possible as you'd just need the UART connection. I'm not sure what you mean by your second question?</p>
+              </dd>
+                      <dt id="c16253" class="  "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c16253" class="comment-number">32.</a>
+        On Wednesday, February 21 2024, 16:06        by mike</dt>
+      <dd class="  ">
+
+                <p>Trying to load the Gui nevertheless recieve all kinds of errors can you let me know to what Python version it works ?</p>
+
+
+<p>Python 3.12 and 3.11 gives errors on treats and the 2.7 does not allow pip install</p>
+
+
+
+<p>Reffering to my other Question,<br>
+The intention would be to add a esp32 to grab the speed which i hope is visable in the serial</p>
+
+
+<p>Which i would like to display the speed on a 7 segment ledstrip display<br>
+<a href="https://youtu.be/r_yobwaBWr0?t=766" title="https://youtu.be/r_yobwaBWr0?t=766" rel="ugc nofollow">https://youtu.be/r_yobwaBWr0?t=766</a></p>
+
+
+<p>Bassically building my own maximum speed display</p>
+              </dd>
+                      <dt id="c16258" class=" odd "><a href="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#c16258" class="comment-number">33.</a>
+        On Wednesday, February 21 2024, 18:12        by limpkin</dt>
+      <dd class=" odd ">
+
+                <p>@mike: could you let me know the errors? 3.12 and 3.11 should work<br>
+your project should work indeed, simply grab the speed through uart <img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(8).php" alt=":)" class="smiley"></p>
+              </dd>
+              </dl>
+        </div>
+                          
+    <form action="https://www.limpkin.fr/index.php?post/2022/03/31/CDM324-Doppler-Motion-Sensor-Backpack%2C-now-with-FFTs%21#pr" method="post" id="comment-form" role="form">
+            <h3>Add a comment</h3>
+      <fieldset>
+
+                <p class="field"><label for="c_name">Name or nickname&nbsp;:</label>
+          <input name="c_name" id="c_name" type="text" size="30" maxlength="255" value="">
+        </p>
+        <p class="field"><label for="c_mail">Email address&nbsp;:</label>
+          <input name="c_mail" id="c_mail" type="text" size="30" maxlength="255" value="">
+        </p>
+        <p class="field"><label for="c_site">Website (optional)&nbsp;:</label>
+          <input name="c_site" id="c_site" type="text" size="30" maxlength="255" value="">
+        </p>
+        <p style="display:none"><input name="f_mail" type="text" size="30" maxlength="255" value=""></p>
+        <p class="field"><label for="c_content">Comment&nbsp;:</label>
+          <textarea name="c_content" id="c_content" cols="35" rows="7"></textarea>
+        </p>
+        <p class="form-help">Comments can be formatted using a simple wiki syntax.</p>
+
+              </fieldset>
+      <fieldset>
+        <p class="remember"><input type="checkbox" id="c_remember" name="c_remember"> <label for="c_remember">Remember me on this blog</label></p><p class="buttons"><input type="submit" class="preview" name="preview" value="preview">
+          <input type="submit" class="submit" value="send">        </p>
+      </fieldset>
+    </form>
+  
+      <div id="pings">
+      <h3>They posted on the same topic</h3>
+          </div>
+        <p id="ping-url">Trackback URL&nbsp;: https://www.limpkin.fr/index.php?trackback/215</p>
+        <p id="comments-feed"><a class="feed" href="https://www.limpkin.fr/index.php?feed/atom/comments/215" title="This post&#39;s comments Atom feed">This post's comments feed</a></p>
+  	<!-- main-content -->
+								</div> <!-- End #content -->
+								<!-- wrapper-main -->
+						</div> <!-- End #main -->
+
+						
+							<div id="sidebar" role="complementary">
+								<div id="blognav">
+									<div class="widget text"><h2>My Projects on Tindie</h2><a href="https://www.tindie.com/stores/stephanelec/?ref=offsite_badges&amp;utm_source=sellers_stephanelec&amp;utm_medium=badges&amp;utm_campaign=badge_large"><img src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a></div>
+								</div> <!-- End #blognav -->
+								<div id="blogextra">
+									<div class="widget pages"><h2>Information</h2><ul><li><a href="https://www.limpkin.fr/index.php?pages/More-about-me">Contact me</a></li></ul></div>
+<div class="widget syndicate"><h2>Subscribe</h2><ul><li><a type="application/atom+xml" href="https://www.limpkin.fr/index.php?feed/atom" title="This blog&#39;s entries Atom feed" class="feed">Entries feed</a></li><li><a type="application/atom+xml" href="https://www.limpkin.fr/index.php?feed/atom/comments" title="This blog&#39;s comments Atom feed" class="feed">Comments feed</a></li></ul></div>
+								</div> <!-- End #blogextra -->
+							</div>
+							<!-- wrapper-sidebar -->
+						<!-- page-wrapper -->
+				</div> <!-- End #wrapper -->
+
+				
+					<div id="footer" role="contentinfo">
+  <p>Powered by <a href="https://dotclear.org/">Dotclear</a> - Theme <em>Time Flies</em> by <a href="http://davidyim.fr/">David Yim</a> and <a href="https://github.com/brol/time-flies">Pierre Van Glabeke</a></p>
+</div>
+
+<script type="text/javascript">
+(function() {
+var ga = document.createElement('script');
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' :'http://www') + '.google-analytics.com/ga.js';
+ga.setAttribute('async', 'true');
+document.documentElement.firstChild.appendChild(ga);
+})();
+</script><script src="./CDM324 Doppler Speed Sensor, with FFTs! - Limpkin&#39;s blog_files/index(9).php"></script>
+<script>
+//<![CDATA[
+$(function () {
+var count = 0; $(".post").each(function() {
+count++;
+$(this).find('a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".gif"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"],a[href$=".GIF"]').addClass("colorbox_zoom");
+$(this).find('a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".gif"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"],a[href$=".GIF"]').attr("rel", "colorbox-"+count);
+});
+$("a[rel*='colorbox-']").colorbox({transition: 'elastic',
+speed: 350,
+title: function(){return $(this).find('img').attr('alt');},
+width: false,
+height: false,
+innerWidth: false,
+innerHeight: false,
+initialWidth: 300,
+initialHeight: 100,
+maxWidth: false,
+maxHeight: false,
+scalePhotos: true,
+scrolling: true,
+iframe: false,
+opacity: 0.85,
+open: false,
+preloading: true,
+overlayClose: true,
+loop: true,
+slideshow: false,
+slideshowSpeed: 2500,
+slideshowAuto: false,
+slideshowStart: 'Start slideshow',
+slideshowStop: 'Stop slideshow',
+current: '{current} of {total}',
+previous: 'previous',
+next: 'next',
+close: 'close',
+onOpen: false,
+onLoad: false,
+onComplete: false,
+onCleanup: false,
+onClosed: false});
+});
+
+//]]>
+</script>
+
+					<!-- page-footer -->
+				<!-- body-page -->
+		</div> <!-- End #page -->
+		<!-- html-body -->
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

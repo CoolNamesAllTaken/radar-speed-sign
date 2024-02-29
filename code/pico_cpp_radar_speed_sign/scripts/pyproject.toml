@@ -7,12 +7,14 @@ readme = "README.md"
 packages = [{include = "pico_cpp_radar_speed_sign_scripts"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.12"
 numpy = "^1.26.3"
 matplotlib = "^3.8.2"
 pyserial = "^3.5"
 python-dotenv = "^1.0.1"
 pyqtgraph = "^0.13.3"
+pyqt6 = "^6.6.1"
+pyqtdarktheme = "^2.1.0"
 
 
 [build-system]
