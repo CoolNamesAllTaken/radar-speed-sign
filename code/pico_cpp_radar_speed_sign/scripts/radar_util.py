@@ -17,6 +17,7 @@ import qdarktheme
 FFT_NUM_SAMPLES = 1000
 FFT_SAMPLE_FREQ_HZ = 48e6 / 6e3
 FFT_BIN_FREQ_INCREMENT_HZ = FFT_SAMPLE_FREQ_HZ / FFT_NUM_SAMPLES
+FFT_NUM_LABELLED_PEAKS = 5
 
 FFT_VEL_DECT_MAG_THRESHOLD = 200 # Bins with a Y value greater than or equal to this count as a target velocity.
 
@@ -137,6 +138,7 @@ class RadarUtilWindow(QMainWindow):
         self.fft_data= np.stack((np.arange(100), np.zeros((100,))), axis=-1)
         self.fft_plot_curve = self.fft_plot_widget.plot(self.fft_data, pen=pg.mkPen('w', width=2))
         self.fft_peak_arrows = []
+        self.fft_peak_labels = []
         self.velocity_data = np.stack((np.arange(100), np.zeros((100,))), axis=-1)
         self.velocity_plot_curve = self.velocity_plot_widget.plot(self.velocity_data, pen=pg.mkPen('w', width=2))
 
@@ -237,19 +239,26 @@ class RadarUtilWindow(QMainWindow):
         # Clear old peak arrows off the FFT curve.
         for i in range(len(self.fft_peak_arrows)):
             self.fft_plot_widget.removeItem(self.fft_peak_arrows[i])
+        
+        # Clear old peak labels off the FFT curve.
+        for i in range(len(self.fft_peak_labels)):
+            self.fft_plot_widget.removeItem(self.fft_peak_labels[i])
 
         fft_gradient_peaks = [] # List of tuples with the form (fft_freq, fft_mag) for each peak.
-        for i in range(1, len(fft_grad_data)):
-            if fft_grad_data[i-1][1] > 0 and fft_grad_data[i][1] < 0:
-                fft_freqs = [fft_grad_data[i-1][1], fft_grad_data[i][1]]
-                fft_grads = [fft_grad_data[i-1][0], fft_grad_data[i][0]]
-                fft_mags = [self.fft_data[i-1][1], self.fft_data[i-1][1]]
-                peak_frequency = fft_freqs[0]
-                peak_magnitude = fft_mags[0]
-                fft_gradient_peaks.append([peak_frequency, peak_magnitude])
+        for i in range(1, len(fft_grad_data)-1):
+            if fft_grad_data[i-1][1] > 0 and fft_grad_data[i+1][1] < 0:
+                peak_frequency = self.fft_data[i][0]
+                peak_magnitude = self.fft_data[i][1]
+                fft_gradient_peaks.append((peak_frequency, peak_magnitude))
 
+        fft_gradient_peaks.sort(key=lambda a: a[1], reverse=True) # sort peaks by magnitude, descending order
+        for i, peak in enumerate(fft_gradient_peaks[:FFT_NUM_LABELLED_PEAKS]):
                 self.fft_peak_arrows.append(pg.CurveArrow(self.fft_plot_curve, index=i))
                 self.fft_plot_widget.addItem(self.fft_peak_arrows[-1])
+
+                self.fft_peak_labels.append(pg.TextItem(f"{peak[0]}, {peak[1]}", angle=90))
+                self.fft_peak_labels[-1].setPos(peak[0], peak[1])
+                self.fft_plot_widget.addItem(self.fft_peak_labels[-1])
     
     def hz_to_mph(freq_hz):
         return freq_hz / 31.36
