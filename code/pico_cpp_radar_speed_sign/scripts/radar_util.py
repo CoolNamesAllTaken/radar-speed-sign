@@ -19,7 +19,8 @@ FFT_SAMPLE_FREQ_HZ = 48e6 / 6e3
 FFT_BIN_FREQ_INCREMENT_HZ = FFT_SAMPLE_FREQ_HZ / FFT_NUM_SAMPLES
 FFT_NUM_LABELLED_PEAKS = 5
 
-FFT_VEL_DECT_MAG_THRESHOLD = 200 # Bins with a Y value greater than or equal to this count as a target velocity.
+FFT_VEL_DECT_MAG_THRESHOLD = 10 # Bins with a Y value greater than or equal to this count as a target velocity.
+FFT_VEL_PEAK_MIN_HZ = 10 # Ignore velocity peaks below this frequency.
 
 V_HISTORY_NUM_SAMPLES = 100
 V_MAX_YLIM_MPH = 30
@@ -135,12 +136,16 @@ class RadarUtilWindow(QMainWindow):
         self.velocity_plot_widget = pg.PlotWidget()
         layout.addWidget(self.velocity_plot_widget)
         
-        self.fft_data= np.stack((np.arange(100), np.zeros((100,))), axis=-1)
+        self.fft_data= np.stack((np.arange(V_HISTORY_NUM_SAMPLES), np.zeros((100,))), axis=-1)
         self.fft_plot_curve = self.fft_plot_widget.plot(self.fft_data, pen=pg.mkPen('w', width=2))
         self.fft_peak_arrows = []
         self.fft_peak_labels = []
-        self.velocity_data = np.stack((np.arange(100), np.zeros((100,))), axis=-1)
-        self.velocity_plot_curve = self.velocity_plot_widget.plot(self.velocity_data, pen=pg.mkPen('w', width=2))
+        self.velocity_history = [0 for _ in range(V_HISTORY_NUM_SAMPLES)]
+        # self.velocity_data = np.stack((np.arange(100), np.zeros((100,))), axis=-1)
+        self.velocity_plot_curve = self.velocity_plot_widget.plot(
+            np.stack((np.arange(100), self.velocity_history), axis=-1), 
+            pen=pg.mkPen('w', width=2)
+        )
 
         ## Set the Layout
         self.central_widget.setLayout(layout)
@@ -163,10 +168,10 @@ class RadarUtilWindow(QMainWindow):
             port_name = self.serial_port_dropdown.currentText()
             try:
                 self.serial = serial.Serial(port_name, baudrate=9600, timeout=1)
+                self.serial.read_all() # empty input buffer
                 print(f"Connected to {port_name}")
 
                 self.serial_connect_button.setText("Disconnect")
-                # self.serial_connect_button.
 
                 # Start updating the plots
                 self.timer = pg.QtCore.QTimer()
@@ -202,6 +207,7 @@ class RadarUtilWindow(QMainWindow):
         """
 
         line = self.serial.readline()
+        self.serial.read_all() # dump extra lines in case falling behind
 
         data_str_list = line.split()
 
@@ -245,24 +251,45 @@ class RadarUtilWindow(QMainWindow):
             self.fft_plot_widget.removeItem(self.fft_peak_labels[i])
 
         fft_gradient_peaks = [] # List of tuples with the form (fft_freq, fft_mag) for each peak.
-        for i in range(1, len(fft_grad_data)-1):
-            if fft_grad_data[i-1][1] > 0 and fft_grad_data[i+1][1] < 0:
+        for i in range(1, len(fft_grad_data)):
+            if fft_grad_data[i-1][1] > 0 and fft_grad_data[i][1] < 0:
+                # Peak is between positive and negative slope.
                 peak_frequency = self.fft_data[i][0]
                 peak_magnitude = self.fft_data[i][1]
                 fft_gradient_peaks.append((peak_frequency, peak_magnitude))
 
         fft_gradient_peaks.sort(key=lambda a: a[1], reverse=True) # sort peaks by magnitude, descending order
+        # Label and arrow peaks on FFT.
         for i, peak in enumerate(fft_gradient_peaks[:FFT_NUM_LABELLED_PEAKS]):
-                self.fft_peak_arrows.append(pg.CurveArrow(self.fft_plot_curve, index=i))
-                self.fft_plot_widget.addItem(self.fft_peak_arrows[-1])
+            peak_freq = peak[0]
+            peak_mag = peak[1]
 
-                self.fft_peak_labels.append(pg.TextItem(f"{peak[0]}, {peak[1]}", angle=90))
-                self.fft_peak_labels[-1].setPos(peak[0], peak[1])
-                self.fft_plot_widget.addItem(self.fft_peak_labels[-1])
-    
-    def hz_to_mph(freq_hz):
+            self.fft_peak_arrows.append(pg.ArrowItem(pos=(peak_freq, peak_mag), angle=-90))
+            self.fft_plot_widget.addItem(self.fft_peak_arrows[-1])
+
+            self.fft_peak_labels.append(pg.TextItem(f"{peak_freq:2.1f}, {peak_mag:2.2f}", angle=90))
+            self.fft_peak_labels[-1].setPos(peak_freq, peak_mag)
+            self.fft_plot_widget.addItem(self.fft_peak_labels[-1])
+
+        # Find velocity peak.
+        fft_vel_dect_mag_threshold = 10*np.log10(FFT_VEL_DECT_MAG_THRESHOLD+1)  if self.fft_plot_log_button.isChecked() else FFT_VEL_DECT_MAG_THRESHOLD
+        vel_dect_freq = 0
+
+        for i, peak in enumerate(fft_gradient_peaks[:FFT_NUM_LABELLED_PEAKS]):
+            peak_freq = peak[0]
+            peak_mag = peak[1]
+
+            if peak_freq > FFT_VEL_PEAK_MIN_HZ and peak_mag > fft_vel_dect_mag_threshold:
+                vel_dect_freq = peak_freq
+                break # get out of the for loop, already found velocity!
+        
+        self.velocity_history.pop()
+        self.velocity_history.insert(0, hz_to_mph(vel_dect_freq)) # add current velocity to front of list
+        self.velocity_plot_curve.setData(np.stack((np.arange(V_HISTORY_NUM_SAMPLES), self.velocity_history), axis=-1))
+
+
+def hz_to_mph(freq_hz):
         return freq_hz / 31.36
-
 
     
 
