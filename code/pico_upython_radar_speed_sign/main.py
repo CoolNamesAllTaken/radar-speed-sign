@@ -4,7 +4,7 @@ from radar_sensor import HB100
 from demo_display import DemoDisplay
 import utime
 
-SOFTWARE_VERSION = "0.2.0"
+SOFTWARE_VERSION = "0.2.0-kph"
 
 DEMO_MODE = False
 

@@ -4,9 +4,9 @@
     "python.analysis.typeCheckingMode": "basic",
     "micropico.syncFolder": "",
     "python.analysis.typeshedPaths": [
-        ".vscode\\Pico-W-Stub"
+        "~\\.micropico-stubs\\included"
     ],
     "python.analysis.extraPaths": [
-        ".vscode\\Pico-W-Stub\\stubs"
+        "~\\.micropico-stubs\\included"
     ]
 }

@@ -6,6 +6,9 @@ class HB100:
     HOLD_INTERVAL_MS = 500
     SPEED_BUFFER_SIZE = 10
     SPEED_BUFFER_SAMPLE_INTERVAL_MS = 10
+    STATUS_LED_PIN = 25
+
+    MPH_TO_KPH = 1.60934
 
     class SpeedFilterMode:
         LOW_PASS = 0
@@ -22,6 +25,8 @@ class HB100:
         self.speed_buffer_index = 0
         self.speed_buffer_prev_index = self.SPEED_BUFFER_SIZE-1
         self.speed_buffer_next_sample_timestamp_ms = 0
+        self.status_led = Pin(self.STATUS_LED_PIN, mode=Pin.OUT)
+        self.status_led.on()
     
     def increment_speed_buffer_index(self, index):
         """
@@ -38,6 +43,7 @@ class HB100:
         timestamp_us = utime.ticks_us()
         self.last_pulse_period_us = timestamp_us - self.last_rising_edge_timestamp_us
         self.last_rising_edge_timestamp_us = timestamp_us
+        self.status_led.toggle()
 
         self.hold_end_timestamp_ms = utime.ticks_ms() + self.HOLD_INTERVAL_MS # fresh signal delays blank
 
@@ -68,7 +74,7 @@ class HB100:
 
 
     def get_speed(self):
-        return self.speed
+        return self.speed * self.MPH_TO_KPH
     
     def get_speed_str(self):
         """
